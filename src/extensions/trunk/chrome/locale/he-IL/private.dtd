@@ -1,0 +1,5 @@
+<!ENTITY privatebrowsingwarning.title "מנוע IE איננו תומך במצב גלישה פרטית">
+<!ENTITY privatebrowsingwarning.intro1 "מצב גלישה פרטית הופעל ל&brandShortName; אבל איננו נתמך על ידי מנוע IE.">
+<!ENTITY privatebrowsingwarning.intro2 "אם מנוע IE יופעל, היסטוריית הדפדפן,היסטוריית החיפוש, היסטוריית ההורדה, היסטוריית טפסי אינטרנט, עוגיות וקבצי אינטרנט הזמניים יוקלטו בתיעוד היומן של היסטוריית IE.">
+<!ENTITY privatewarning.whatShouldIDo.content "על מנת שמצב גלישה פרטית לא יוקלט, יש להחליף בחזרה למנוע &brandShortName;.">
+<!ENTITY privatewarning.expert.content "על מנת בכל זאת להתחיל את מנוע IE כדי לראות את העמודים, יש ללחוץ 'המשך'. הודעה: לשוניות &brandShortName; אחרות שלא משתמשות במנוע IE עדיין באסופות מצב גלישה בטוחה.">

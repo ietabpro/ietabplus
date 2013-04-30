@@ -1,0 +1,5 @@
+<!ENTITY privatebrowsingwarning.title "El motor de IE no soporta Navegación Privada">
+<!ENTITY privatebrowsingwarning.intro1 "Está utilizando Navegación Privada para &brandShortName;, que sin embargo no está soportada para IE.">
+<!ENTITY privatebrowsingwarning.intro2 "Si utiliza el motor de IE, el historial de su navegador, el historial de búsquedas, el historial de descargas, el historial de formularios, las cookies, y los ficheros temporales de internet serán guardados en los registros del historial de IE.">
+<!ENTITY privatewarning.whatShouldIDo.content "Si no desea que sus datos privados se registren, por favor vuelva al motor &brandShortName;.">
+<!ENTITY privatewarning.expert.content "Si todavía desea utilizar el motor de IE para ver las páginas, por favor, pulse 'Continuar'. Las otras pestañas &brandShortName; que no utilicen el motor de IE, son sesiones que se mantienen con la Navegación Privada activa.">

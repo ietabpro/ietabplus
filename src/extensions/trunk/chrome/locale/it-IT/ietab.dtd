@@ -1,0 +1,91 @@
+<!ENTITY dialog.title "Opzioni di IE Tab +">
+<!ENTITY toolsmenu.label "Opzioni di IE Tab +">
+<!ENTITY toolbar.button.label "IE Tab +">
+<!ENTITY toolbar.button.display "Pulsante di IE Tab +">
+<!ENTITY toolbar.button.tooltip0 "Clic col tasto sinistro: cambia il motore di rendering di questa pagina.">
+<!ENTITY toolbar.button.tooltip1 "Clic col tasto centrale: apre una nuova scheda cambiando il motore di rendering.">
+<!ENTITY toolbar.button.tooltip2 "Clic col tasto destro: menu contestuale.">
+<!ENTITY popup.viewpage "Visualizza pagina con IE Tab +">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Apri collegamento in IE Tab +">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Apri in IE Tab +">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Cambia motore di rendering">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Visualizza pagina in un'applicazione esterna">
+<!ENTITY popup.viewpage.extapp.key "V">
+<!ENTITY popup.viewlink.extapp "Apri collegamento in un'applicazione esterna">
+<!ENTITY popup.viewlink.extapp.key "A">
+<!ENTITY popup.bookmark.extapp "Apri in un'applicazione esterna">
+<!ENTITY popup.bookmark.extapp.key "A">
+<!ENTITY popup.tabbar.extapp "Apri in un'applicazione esterna">
+<!ENTITY popup.tabbar.extapp.key "A">
+<!ENTITY filter.label "Filtro dei siti">
+<!ENTITY filter.enabled "Attiva il filtro dei siti">
+<!ENTITY filter.column.rule "Regola">
+<!ENTITY filter.column.enabled "Attivato">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "Aggiungi">
+<!ENTITY filter.button.delete "Elimina">
+<!ENTITY general.label "Impostazioni generali">
+<!ENTITY interface.caption "Mostra nell'interfaccia:">
+<!ENTITY interface.toolsmenu "Elemento del menu strumenti">
+<!ENTITY interface.toolsmenu.icon "Icona del menu strumenti">
+<!ENTITY interface.statusbar "Icona della barra di stato">
+<!ENTITY switch.caption "Quando si cambia motore di rendering:">
+<!ENTITY switch.handleurl "Utilizza sempre questo motore di rendering per aprire un nuovo URL">
+<!ENTITY switch.alwaysnew "Apri in una nuova scheda quando si cambia motore">
+<!ENTITY switch.focustab "Porta in primo piano la nuova scheda quando si cambia motore">
+<!ENTITY uipref.label "Preferenze interfaccia">
+<!ENTITY context.caption.tabsmenu "Elementi da mostrare nel menu contestuale delle schede nella barra delle schede:">
+<!ENTITY context.caption.pagelink "Elementi da mostrare nel menu contestuale dell'area dei contenuti:">
+<!ENTITY context.caption.bookmark "Elementi da mostrare nel menu contestuale dei segnalibri personali:">
+<!ENTITY context.embed "Motore incorporato">
+<!ENTITY context.extapp "Applicazione esterna">
+<!ENTITY context.icon "Icona">
+<!ENTITY external.label "Applicazione esterna">
+<!ENTITY external.caption "Impostazioni dell'applicazione esterna">
+<!ENTITY external.path.label "Percorso:">
+<!ENTITY external.param.label "Parametri:">
+<!ENTITY external.button.browse "Sfoglia">
+<!ENTITY external.ctrlclick "CTRL + clic sul pulsante di IE Tab + per aprire l'URL in un'applicazione esterna">
+<!ENTITY external.button.reset "Utilizza Internet Explorer">
+<!ENTITY apply.label "Applica">
+<!ENTITY settings.label "Importa/esporta...">
+<!ENTITY settings.default "Ripristina i valori predefiniti">
+<!ENTITY settings.import "Importa le impostazioni...">
+<!ENTITY settings.export "Esporta le impostazioni...">
+<!ENTITY mode.label "Modalità di IE Tab +">
+<!ENTITY classic.label "Modalità classica (compatibile con IE Tab, più stabile)">
+<!ENTITY advanced.label "Modalità avanzata">
+<!ENTITY firstrun.descr "Selezionare una modalità per IE Tab +:">
+<!ENTITY restart.descr "Le modifiche saranno effettive dopo il riavvio.">
+<!ENTITY rules.column "Regole">
+<!ENTITY enabled.column "Attivato">
+<!ENTITY cookies.column "Sincronizza i cookie">
+<!ENTITY useragent.column "Sincronizza user-agent">
+<!ENTITY switchback.column "Ritorna a &brandShortName; in una nuova pagina">
+<!ENTITY settings.import-ietab "Importa le impostazioni da IETab">
+<!ENTITY switch.show-prompt "Visualizza messaggio 'Riprova' quando si passa a IE">
+<!ENTITY context.edit.label "Modifica regola">
+<!ENTITY context.moveup.label "Sposta regola in alto">
+<!ENTITY context.movedown.label "Sposta regola in basso">
+<!ENTITY context.enable.label "Attiva">
+<!ENTITY context.disable.label "Disattiva">
+<!ENTITY edit.label "Modifica">
+<!ENTITY edit.accesskey "M">
+<!ENTITY cut.label "Taglia">
+<!ENTITY cut.accesskey "T">
+<!ENTITY copy.label "Copia">
+<!ENTITY copy.accesskey "C">
+<!ENTITY paste.label "Incolla">
+<!ENTITY paste.accesskey "I">
+<!ENTITY remove.label "Cancella">
+<!ENTITY remove.accesskey "A">
+<!ENTITY context.switchEngine "Cambia il motore di rendering">
+<!ENTITY context.switchEngineSafe "Cambia il motore (senza sincronizzare user-agent)">
+<!ENTITY context.switchEngineNoCookie "Cambia il motore (senza sincronizzare i cookie)">
+<!ENTITY context.settings "Impostazioni...">
+<!ENTITY features.adblock "Attiva il supporto per Adblock Plus">
+<!ENTITY features.synccookie "Sincronizza cookie">

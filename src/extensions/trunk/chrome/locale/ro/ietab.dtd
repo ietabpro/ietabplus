@@ -1,0 +1,92 @@
+<!ENTITY dialog.title "Opțiuni IE Tab +">
+<!ENTITY toolsmenu.label "Opțiuni IE Tab +">
+<!ENTITY toolbar.button.label "IE Tab +">
+<!ENTITY toolbar.button.display "Buton IE Tab +">
+<!ENTITY toolbar.button.tooltip0 "Clic-stânga: Comută motorul de interpretare a paginii curente.">
+<!ENTITY toolbar.button.tooltip1 "Clic-mijloc: Comută motorul de interpretare și redeschide pagina într-o filă nouă.">
+<!ENTITY toolbar.button.tooltip2 "Clic-dreapta: Afișează meniul IE Tab +.">
+<!ENTITY popup.viewpage "Opţiuni IE Tab +">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Deschide legatura prin IE Tab +">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Deschide prin IE Tab +">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Comută motorul de interpretare">
+<!ENTITY popup.tabbar.switch.key "C">
+<!ENTITY popup.viewpage.extapp "Vizualizează pagina cu aplicația externă">
+<!ENTITY popup.viewpage.extapp.key "x">
+<!ENTITY popup.viewlink.extapp "Deschide legătura în aplicația externă">
+<!ENTITY popup.viewlink.extapp.key "x">
+<!ENTITY popup.bookmark.extapp "Deschide în aplicația externă">
+<!ENTITY popup.bookmark.extapp.key "x">
+<!ENTITY popup.tabbar.extapp "Deschide în aplicația externă">
+<!ENTITY popup.tabbar.extapp.key "x">
+<!ENTITY filter.label "Filtrare saituri">
+<!ENTITY filter.enabled "Activează filtrarea saiturilor">
+<!ENTITY filter.column.rule "Regulă">
+<!ENTITY filter.column.enabled "Activat">
+<!ENTITY filter.url.label "Adresă">
+<!ENTITY filter.button.add "Adaugă">
+<!ENTITY filter.button.delete "Șterge">
+<!ENTITY general.label "Opțiuni generale">
+<!ENTITY interface.caption "Opțiuni interfaţă">
+<!ENTITY interface.toolsmenu "Afișează opțiunile în meniul „Unelte“">
+<!ENTITY interface.toolsmenu.icon "Afișează pictograma în meniul „Unelte“">
+<!ENTITY interface.statusbar "Afișează pictograma în bara de stare">
+<!ENTITY switch.caption "După comutarea motorului de interpretare:">
+<!ENTITY switch.handleurl "Folosește întotdeauna motorul curent pentru a deschide o adresă nouă">
+<!ENTITY switch.alwaysnew "Deschide o filă nouă">
+<!ENTITY switch.focustab "Selectează noua fila deschisă">
+<!ENTITY uipref.label "Interfață">
+<!ENTITY context.caption.tabsmenu "Opțiuni meniu contextual al barei de file">
+<!ENTITY context.caption.pagelink "Opțiuni meniu contextual al paginii">
+<!ENTITY context.caption.bookmark "Opțiuni meniu contextual pentru semnele de carte">
+<!ENTITY context.embed "Motor încapsulat">
+<!ENTITY context.extapp "Aplicație externă">
+<!ENTITY context.icon "Afișează pictograma">
+<!ENTITY external.label "Aplicație externă">
+<!ENTITY external.caption "Opțiuni aplicație externă">
+<!ENTITY external.path.label "Cale și denumire:">
+<!ENTITY external.param.label "Parametri:">
+<!ENTITY external.button.browse "Răsfoiește...">
+<!ENTITY external.ctrlclick "Deschide adresa în aplicația externă cu Ctrl+clic pe pictograma IE Tab +">
+<!ENTITY external.button.reset "Folosește Internet Explorer">
+<!ENTITY apply.label "Aplică">
+<!ENTITY settings.label "Import/Export...">
+<!ENTITY settings.default "Inițializează">
+<!ENTITY settings.import "Importă configurația...">
+<!ENTITY settings.export "Exportă configurația...">
+<!ENTITY mode.label "Mod de funcționare">
+<!ENTITY classic.label "Clasic (compatibil cu IE Tab, mai stabil)">
+<!ENTITY advanced.label "Avansat">
+<!ENTITY firstrun.descr "Este recomandat să alegeți mai întâi modul de funcționare al IE Tab +:">
+<!ENTITY restart.descr "Modificările vor avea efect după repornirea &brandShortName;.">
+
+<!ENTITY rules.column "Regulă">
+<!ENTITY enabled.column "Activată">
+<!ENTITY cookies.column "Sincro cookie">
+<!ENTITY useragent.column "Sincro user-agent">
+<!ENTITY switchback.column "Revenire la &brandShortName; în pagină nouă">
+<!ENTITY settings.import-ietab "Importă configurația din IETab">
+<!ENTITY switch.show-prompt "Afișează butonul de reîncărcare a paginii la comutarea către IE">
+<!ENTITY context.edit.label		"Editează">
+<!ENTITY context.moveup.label	"Mută în sus">
+<!ENTITY context.movedown.label	"Mută în jos">
+<!ENTITY context.enable.label	"Activează">
+<!ENTITY context.disable.label	"Dezactivează">
+<!ENTITY edit.label				"Editează">
+<!ENTITY edit.accesskey			"E">
+<!ENTITY cut.label				"Decupează">
+<!ENTITY cut.accesskey			"D">
+<!ENTITY copy.label				"Copiază">
+<!ENTITY copy.accesskey			"C">
+<!ENTITY paste.label			"Lipește">
+<!ENTITY paste.accesskey		"p">
+<!ENTITY remove.label			"Șterge">
+<!ENTITY remove.accesskey		"t">
+<!ENTITY context.switchEngine "Comută motorul de interpretare">
+<!ENTITY context.switchEngineSafe "Comută motorul de interpretare (fără șir user-agent)">
+<!ENTITY context.switchEngineNoCookie "Comută motorul de interpretare (fără module cookie)">
+<!ENTITY context.settings "Opțiuni...">
+<!ENTITY features.adblock "Oferă suport pentru Adblock Plus">
+<!ENTITY features.synccookie "Sincronizează modulele cookie">

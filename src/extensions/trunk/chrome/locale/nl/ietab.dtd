@@ -1,0 +1,91 @@
+<!ENTITY dialog.title "IE Tab + opties">
+<!ENTITY toolsmenu.label "IE Tab + opties">
+<!ENTITY toolbar.button.label "IE Tab +">
+<!ENTITY toolbar.button.display "IE Tab + knop">
+<!ENTITY toolbar.button.tooltip0 "Links klikken: Rendering engine van huidige pagina omschakelen">
+<!ENTITY toolbar.button.tooltip1 "Midden klikken: Rendering engine omschakelen naar nieuw tabblad">
+<!ENTITY toolbar.button.tooltip2 "Rechts klikken: Context menu">
+<!ENTITY popup.viewpage "Pagina weergeven in IE Tab +">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Koppeling openen in IE Tab +">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Openen in IE Tab +">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Rendering engine omschakelen">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Pagina in ext. app. weergeven">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "Koppeling in ext. app. openen">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "Openen in ext. app.">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "Openen in ext. app.">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "Sites filter">
+<!ENTITY filter.enabled "Sites filter inschakelen">
+<!ENTITY filter.column.rule "Regel">
+<!ENTITY filter.column.enabled "Ingeschakeld">
+<!ENTITY filter.url.label "Webadres:">
+<!ENTITY filter.button.add "Toevoegen">
+<!ENTITY filter.button.delete "Verwijderen">
+<!ENTITY general.label "Algemene instellingen">
+<!ENTITY interface.caption "In venster weergeven:">
+<!ENTITY interface.toolsmenu "Menu Extra item">
+<!ENTITY interface.toolsmenu.icon "Menu Extra pictogram">
+<!ENTITY interface.statusbar "Statusbalk pictogram">
+<!ENTITY switch.caption "Bij het omschakelen van de rendering engine:">
+<!ENTITY switch.handleurl "Altijd de huidige engine gebruiken om een nieuw webadres te openen">
+<!ENTITY switch.alwaysnew "In een nieuw tabblad openen bij het omschakelen engines">
+<!ENTITY switch.focustab "Het nieuwe tabblad op de voorgrond weergeven bij het omschakelen engines">
+<!ENTITY uipref.label "Uiterlijk">
+<!ENTITY context.caption.tabsmenu "In het tabbladen context menu weergeven:">
+<!ENTITY context.caption.pagelink "In het pagina context menu weergeven:">
+<!ENTITY context.caption.bookmark "In het bladwijzers context menu weergeven:">
+<!ENTITY context.embed "Ingebouwde engine">
+<!ENTITY context.extapp "Extern programma">
+<!ENTITY context.icon "Pictogram">
+<!ENTITY external.label "Extern programma">
+<!ENTITY external.caption "Instellingen extern programma">
+<!ENTITY external.path.label "Pad:">
+<!ENTITY external.param.label "Parameters:">
+<!ENTITY external.button.browse "Bladeren">
+<!ENTITY external.ctrlclick "Ctrl+Klikken op IE Tab + knop om webadres in Ext. App. te openen">
+<!ENTITY external.button.reset "Internet Explorer gebruiken">
+<!ENTITY apply.label "Toepassen">
+<!ENTITY settings.label "Importeren/Exporteren">
+<!ENTITY settings.default "Standaardwaarden herstellen">
+<!ENTITY settings.import "Instellingen importeren...">
+<!ENTITY settings.export "Instellingen exporteren...">
+<!ENTITY mode.label "IE Tab + modus">
+<!ENTITY classic.label "Klassieke modus (comapatibel met IE Tab, meest stabiel)">
+<!ENTITY advanced.label "Geavanceerde modus">
+<!ENTITY firstrun.descr "Het wordt aanbevolen eerst de werk modus van IE Tab + te selecteren:">
+<!ENTITY restart.descr "Gewijzigde selecties worden pas van kracht na het herstarten van &brandShortName;.">
+<!ENTITY rules.column "Regels">
+<!ENTITY enabled.column "Ingeschakeld">
+<!ENTITY cookies.column "Cookie synchroniseren">
+<!ENTITY useragent.column "User-Agent synchroniseren">
+<!ENTITY switchback.column "Naar &brandShortName; terugschakelen in een nieuwe pagina">
+<!ENTITY settings.import-ietab "Instellingen van IE Tab importeren">
+<!ENTITY switch.show-prompt "'Herhalen' melding weergeven na omschakelen naar IE">
+<!ENTITY context.edit.label "Regel wijzigen">
+<!ENTITY context.moveup.label "Regel omhoog verplaatsen">
+<!ENTITY context.movedown.label "Regel omlaag verplaatsen">
+<!ENTITY context.enable.label "Inschakelen">
+<!ENTITY context.disable.label "Uitschakelen">
+<!ENTITY edit.label "Wijzigen">
+<!ENTITY edit.accesskey "W">
+<!ENTITY cut.label "Knippen">
+<!ENTITY cut.accesskey "X">
+<!ENTITY copy.label "Kopiëren">
+<!ENTITY copy.accesskey "C">
+<!ENTITY paste.label "Plakken">
+<!ENTITY paste.accesskey "V">
+<!ENTITY remove.label "Verwijderen">
+<!ENTITY remove.accesskey "D">
+<!ENTITY context.switchEngine "Rendering engine omschakelen">
+<!ENTITY context.switchEngineSafe "Engine omschakelen (User-Agent niet synchroniseren)">
+<!ENTITY context.switchEngineNoCookie "Engine omschakelen (Cookie niet synchroniseren)">
+<!ENTITY context.settings "Instellingen...">
+<!ENTITY features.adblock "Adblock Plus ondersteunen">
+<!ENTITY features.synccookie "Cookies synchroniseren">

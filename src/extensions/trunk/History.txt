@@ -1,0 +1,228 @@
+v2.04.20110724
+-----------------------------------
+[BUG FIX] Fixed compatible issues with Firefox 8.0a1. See bug #24195, #24214.
+
+v2.03.20110625
+-----------------------------------
+Offical support for Firefox 5 and SeaMonkey 2.1.
+
+v2.02.20110525
+-----------------------------------
+1. [BUG FIX] 'Open In New Window' opens FF Window without Toolbars. See bug #23756.
+2. [BUG FIX] Personal Bookmarks Context Menu items not visible on Firefox 4. See bug #23674.
+
+v2.01.20110417
+-----------------------------------
+1. [BUG FIX] Status bar or toolbar icon doesn't reflect current engine. See bug #23761.
+2. [BUG FIX] Unnecessary authentication dialog appears. See bug #23911.
+
+v2.00.20110326
+-----------------------------------
+1. [BUG FIX] After switching to IE the URL bar of Firefox stops working. See bug #23763.
+2. Updated Romanian localization, thanks Cãtãlin ZAMFIRESCU.
+
+v1.99.20110227
+-----------------------------------
+1. [BUG FIX] Filter rules may fail if browser already opened. See bug #23666.
+2. [BUG FIX] FF opens a shortcut in a new Windows and in a new Tab. See bug #23723.
+
+v1.98.20110116
+-----------------------------------
+1. As many users demanded, reverting the toolbar icon back to the original style.
+2. Support KeePass' Auto-Type feature. See bug #23199.
+3. The status bar icon now reflects the same status as the toolbar icon. See bug #22790.
+4. [BUG FIX] Input loses focus when switched out and back to the IE Tab. See bug #23407.
+
+v1.97.20101222
+-----------------------------------
+1. [NEW] Support Adblock Plus 1.3.x.
+2. [IMPROVEMENT] Improved compatibility of the 'Sync cookie' feature.
+3. [IMPROVEMENT] Improved compatibility with Firefox 4.0b8.  
+
+v1.96.20101021
+-----------------------------------
+1. [IMPROVEMENT] Improved reliability of auto-switching for file:// protocol.
+2. [BUG FIX] Fixed "Link works only one time" bug, see bug #22677.
+
+v1.95.20100930
+-----------------------------------
+1. [BUG FIX] 'Sync Cookie' features stops working since Firefox 4.0b5.
+2. [BUG FIX] IE Tab Plus does not properly handle redirects. See bug #23146.
+3. [BUG FIX] IE Tab Plus fails on Minefield 4.0b7pre. See bug #23268.
+4. [BUG FIX] External links open in a new window instead of a new tab. See bug #23286.
+
+v1.94.20100904
+-----------------------------------
+1. Improved compatibility with Firefox 4.0 Beta. See bug #23063, #23062 and #23106.
+2. [BUG FIX] Hang of FF after entering an URL in a window that already is running with IE engine. See bug #23069.
+
+v1.93.20100725
+-----------------------------------
+1. [BUG FIX] Fixed OS version detection bug. See bug #22986
+2. [BUG FIX] Adblock Plus may block some request inproperly. See bug #23023
+3. [BUG FIX] Back doesn't work across Firefox to IE transition. See bug #22963
+4. [NEW] Add a built-in Window Shopper online utility (See "ExternalApplications" in options)
+5. Updated Spanish locale, thanks J.I. Plaza.
+
+v1.92.20100607
+-----------------------------------
+1. [BUG FIX] Copy shortcut may contain login details. See bug #22864.
+2. [BUG FIX] Previous version stops working on some language versions of Windows XP.
+3. [BUG FIX] Back/Forward button is not working in SeaMonkey.
+4. Updated Czech locale, thanks xenophex.
+5. Added Ukraine locale, thanks butch_ben.
+
+v1.91.20100528
+-----------------------------------
+1. Improved stability in Firefox 3.6.4 when OOPP is enabled.
+2. Improved compatibility with SeaMonkey 2.0.4+.
+3. [BUG FIX] IE Tab is not displayed correctly if Firefox resizes. Reported by DaveM.
+4. [BUG FIX] Alt+Left Arrow/Right Arrow will let IE Tab go back/forward twice.
+5. [BUG FIX] Some Latvian language special characters via AltGr can not be typed. See bug #22839.
+6. [MINOR] Refined description and icon picture in SeaMonkey. See bug #22799.
+
+v1.90.20100517
+-----------------------------------
+1. Completely rewritten Adblock Plus support, better performance, much more stable.
+2. [IMPROVEMENT] Private browsing warning in IE Tab can be turned off.
+3. [BUG FIX] In private browsing mode, IE Tab will generate an XML error in German version of Firefox. See bug #22820.
+4. [BUG FIX] Previous version stops working in SeaMonkey. See bug #22798.
+5. [BUG FIX] Crashes in Firefox v3.6.4 if OOPP is enabled. See bug #22720.
+6. [BUG FIX] Coral IE Tab opens two tabs when changing browser. See bug #22818.
+
+v1.86.20100410
+-----------------------------------
+1. [BUG FIX] Sometimes popup window or tabs may not show properly. See bug #22690.
+2. [BUG FIX] 'Open in a new tab when switching engines' is not working. See bug #22202.
+
+v1.85.20100407
+-----------------------------------
+1. [NEW] Detect "Private Browsing" mode of Firefox and remind users for privacy.
+2. [BUG FIX] 'Switch back to Firefox' feature does not working properly since v1.80.
+3. [BUG FIX] UNC path such as \\fileserver\folder will be properly displayed in address bar.
+4. [BUG FIX] Switching to IE will only result a black page in Windows 2000. See bug #22581.
+5. Added Czech locale, thanks tomdlouhan.
+
+v1.83.20100316
+-----------------------------------
+1. [BUG FIX] Viewing an link in the Ext. App. will fail in the 2nd time. Reported by David Masterson.
+2. [BUG FIX] Sometimes shortcut keys may not function properly. See bug #22586 and #22589.
+3. [BUG FIX] Cursor stopped on selection box in HTML form. See bug #22580.
+4. Updated Korean locale, thanks 베르짱.
+
+v1.82.20100312
+-----------------------------------
+1. [IMPROVEMENT] As many people suggested, popup window will be opened in tabs defaultly.
+2. [IMPROVEMENT] Added a menu entry for filter editor.
+3. Added Hungarian locale, thanks Kozák Csaba.
+4. Added Portuguese (Portugal) locale, thanks mrfyda.
+5. Updated Japanese locale, thanks papino0319.
+
+v1.81.20100304
+-----------------------------------
+1. [IMPROVEMENT] As many people suggested, New popup window in IE engine will be shown in Firefox window.
+2. [NEW] Support window.external, which is often used in IE detection. See bug #22507.
+3. Added Hebrew locale, thanks SiiiE.
+4. Added Vietnamese locale, thanks longnh.
+5. Added Brazilian Portuguese locale, thanks pcbossa and edgard.magalhaes.
+
+v1.80.20100224
+-----------------------------------
+1. [NEW] Users can now select "Classical Mode" and "Advanced Mode". IE Tab Plus will behave like the old IE Tab if users select "Classical Mode".
+2. [BUG FIX] In some situations popup window will not work properly. See bug #22379.
+3. Fixed Firefox 3.7a2pre support.
+4. Added Japanese locale, thanks Kazuhiro Hiratsuka and Aozora&Genei.
+5. Added Italian locale, thanks AlexV.
+6. Added Polish locale, thanks Leszek(teo)Życzkowski.
+7. Added Slovak locale, thanks sklado.
+8. Added Dutch locale, thanks Alf.
+
+v1.71.20100212
+-----------------------------------
+1. [NEW] Support Ctrl-+, Ctrl-- Zoom (Requires Firefox 3.5 or later)
+2. Added Spanish locale, thanks J.I. Plaza and Ricardo A. Rivas.
+
+v1.70.20100204
+-----------------------------------
+1. Engine improved to provide better compatibility and performance.
+2. Some potential security problems has been fixed according to AMO editor's requirements
+3. window.close() will take IE's behavior (a prompt box will popup), as many users suggested
+4. Supports NTLM authenticating. See bug #21900.
+5. [BUG FIX] Open a new window or tab may not displayed correctly.
+6. [BUG FIX] Some text box can't be selected/edited. See bug #22315.
+7. Added de-DE locale, thanks pille.
+
+v1.69.20091207
+-----------------------------------
+1. [NEW] Preliminary support for SeaMonkey 2. Thank Raoul's help.
+2. [NEW] Support IE7 and IE8's "Open Link a New Tab" in the context menu
+3. [IMPROVEMENT] Ext. App. will show its display in context menu
+4. Added French locale, thanks Alexi Haeringer.
+5. Added Russian locale, thanks Raoul.
+
+v1.63.20091024
+-----------------------------------
+1. [IMPROVEMENT] Significantly improved stability, many potential crash problems have been solved.
+2. [BUG FIX] Open same pages in the same time in IE engine may show blank page.
+
+v1.62.20091021
+-----------------------------------
+1. [IMPROVEMENT] Tools -> Options -> Content -> Enable Javascript [Advanced] -> Allow scripts to "Move or resize existing windows" will also affect IE engine. Suggested by JeePee.
+2. [BUG FIX] The context menu of bookmark toolbar is not working after switched to IE engine. Reported by JeePee.
+3. [BUG FIX] Firefox may crash when exiting. This is a bug of Windows XP with IE6(SP2), and I have figured out an workaround.
+
+v1.61.20091007
+-----------------------------------
+1. [NEW] Support saving username and password in IE authentication dialog. Suggested by xbipin.
+2. [IMPROVEMENT] Manually switched page will no longer be switched back by rules. This will also fix the bug reported by sebweber.
+3. [BUG FIX] Intranet sites will not automatically switched to IE engine. To re-enable this feature, enable rule: /^http:\/\/[A-Za-z0-9]+\//
+4. [BUG FIX] Type a partial url into the address bar (ie cnn instead on cnn.com) will not go to http://cnn/. See bug #21550.
+
+v1.60.20090901
+-----------------------------------
+1. [NEW] Support Firefox 3.6a1.
+2. [BUG FIX] Ctrl-P will invoke printer dialog twice.
+3. [BUG FIX] Bug #21283 occurs again. See bug #21519.
+4. Added Romanian localization, thanks Cãtãlin ZAMFIRESCU.
+
+v1.50.20090807
+-----------------------------------
+1. [NEW] Support Adblock Plus in IE Tab!
+2. [IMPROVEMENT] UI refined.
+3. [BUG FIX] Firefox URL bar will be blank for a little while when switching to IE.
+4. [BUG FIX] When doing a return carriage in case notes, it inserts a double return - ie goes down 2 lines instead of one. Thanks AuSpLaYa for reporting.
+5. [BUG FIX] Can not load local html/mht file. See bug: https://www.mozdev.org/bugs/show_bug.cgi?id=21283.
+
+v1.11.20090717
+-----------------------------------
+1. [BUG FIX] Ctrl-L, Ctrl-O and other some shortcuts do not work.
+2. [BUG FIX] Characters require AltGr on European keyboard layouts cannot be entered.
+The above bugs are reported by Meyer Kuno (Helbling Technik).
+3. Support Firefox 3.5.1.
+
+v1.10.20090714
+-----------------------------------
+1. [NEW FEATURE] Added a context menu for toolbar and status bar button of IE Tab Plus.
+2. [BUG FIX] User-allowed popup window is incorrectly blocked. Thank PangooZhang for reporting.
+3. [BUG FIX] Fixed Korean locale problem.
+
+v1.01.20090707
+-----------------------------------
+1. [IMPROVEMENT] Now support window.opener and referer in new window. This may also fix the bug reported by HJJ0529: Can not download file from btchina.net.
+2. [BUG FIX] Ctrl-Click launching External IE would fail in the 2nd time. Thanks to JackieKu for reporting.
+3. [BUG FIX] Urls containing '@' are incorrectly redirected to the IE browser engine. Thanks to Meyer Kuno (Helbling Technik) for reporting.
+4. [BUG FIX] Can not import settings from old IE Tab.
+5. [BUG FIX] Scroll bar is incorrectly displayed in frames.
+6. Added Korean locale, thank Wanoo-Lim(林完佑).
+7. NOT working in the lastest nightly build of Firefox 3.6a1, so mark it only supports 3.0-3.5. I will try to support 3.6 later.
+
+v1.00.20090531
+-----------------------------------
+1. No longer blocks ActiveX installation
+2. Added support for script resizing, such as window.resizeTo, window.moveTo, etc. (Requires Windows XP SP2 or later)
+
+v0.99.20090524
+-----------------------------------
+1. Marked Firefox 3.6 support, thanks MattPerkins for suggesting
+2. Support HTTP auth, this new feature may fix the bug reported by Leo, Sch@dows and maybe also Omi Azad
+3. Added zh-TW locale, thank jackbin

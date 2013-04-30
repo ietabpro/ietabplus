@@ -1,0 +1,91 @@
+<!ENTITY dialog.title "IE Tab + - ustawienia">
+<!ENTITY toolsmenu.label "Ustawienia IE Tab +">
+<!ENTITY toolbar.button.label "IE Tab +">
+<!ENTITY toolbar.button.display "Przycisk IE Tab +">
+<!ENTITY toolbar.button.tooltip0 "Kliknięcie l.p.m. zmienia moduł renderujący aktywnej strony">
+<!ENTITY toolbar.button.tooltip1 "Kliknięcie ś.p.m. zmienia moduł renderujący aktywnej strony otwierając ją w nowej karcie">
+<!ENTITY toolbar.button.tooltip2 "Kliknięcie ś.p.m. wyświetla filtr stron IE Tab">
+<!ENTITY popup.viewpage "Otwórz tę stronę w IE Tab +">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Otwórz odnośnik w IE Tab +">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Otwórz w IE Tab +">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Zmień moduł renderujący">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Otwórz stronę w zewnętrznej przeglądarce">
+<!ENTITY popup.viewpage.extapp.key "Z">
+<!ENTITY popup.viewlink.extapp "Otwórz odnośnik w zewnętrznej przeglądarce">
+<!ENTITY popup.viewlink.extapp.key "Z">
+<!ENTITY popup.bookmark.extapp "Otwórz w zewnętrznej przeglądarce">
+<!ENTITY popup.bookmark.extapp.key "Z">
+<!ENTITY popup.tabbar.extapp "Otwórz w zewnętrznej przeglądarce">
+<!ENTITY popup.tabbar.extapp.key "Z">
+<!ENTITY filter.label "Filtr stron">
+<!ENTITY filter.enabled "Witryny z poniższej listy otwieraj zawsze używając silnika renderującego IE">
+<!ENTITY filter.column.rule "Reguła">
+<!ENTITY filter.column.enabled "Włączono">
+<!ENTITY filter.url.label "Adres URL:">
+<!ENTITY filter.button.add "Dodaj">
+<!ENTITY filter.button.delete "Usuń">
+<!ENTITY general.label "Ogólne">
+<!ENTITY interface.caption "Wyświetlaj:">
+<!ENTITY interface.toolsmenu "Element „Ustawienia IE Tab +” w menu „Narzędzia”">
+<!ENTITY interface.toolsmenu.icon "Ikonę dla elementu „Ustawienia IE Tab +”">
+<!ENTITY interface.statusbar "Ikonę przeglądarki na pasku stanu">
+<!ENTITY switch.caption "Gdy jest zmieniany moduł renderujący:">
+<!ENTITY switch.handleurl "Otwieraj nowe witryny używając aktywnego modułu renderującego">
+<!ENTITY switch.alwaysnew "Otwieraj witryny w nowych kartach">
+<!ENTITY switch.focustab "Nowe karty otwieraj jako aktywne">
+<!ENTITY uipref.label "Interfejs">
+<!ENTITY context.caption.tabsmenu "Wyświetlaj w menu kontekstowym paska kart następujące elementy:">
+<!ENTITY context.caption.pagelink "Wyświetlaj w głównym menu kontekstowym następujące elementy:">
+<!ENTITY context.caption.bookmark "Wyświetlaj w menu kontekstowym zakładek osobistych następujące elementy:">
+<!ENTITY context.embed "Zmień moduł renderujący">
+<!ENTITY context.extapp "Otwórz w przeglądarce zewnętrznej">
+<!ENTITY context.icon "Ikony">
+<!ENTITY external.label "Przeglądarka zewnętrzna">
+<!ENTITY external.caption "Ustawienia przeglądarki zewnętrznej">
+<!ENTITY external.path.label "Lokalizacja:">
+<!ENTITY external.param.label "Parametry:">
+<!ENTITY external.button.browse "Przeglądaj">
+<!ENTITY external.ctrlclick "Skrót [Ctrl]+kliknięcie na ikonie „IE Tab +” powoduje otwarcie URL w zewnętrznej przeglądarce">
+<!ENTITY external.button.reset "Użyj Internet Explorera">
+<!ENTITY apply.label "Zastosuj">
+<!ENTITY settings.label "Importuj/Eksportuj…">
+<!ENTITY settings.default "Przywróć domyślne">
+<!ENTITY settings.import "Importuj ustawienia…">
+<!ENTITY settings.export "Eksportuj ustawienia…">
+<!ENTITY mode.label "Tryb IE Tab +">
+<!ENTITY classic.label "Klasyczny (kompatybilny z IE Tab, More Stable)">
+<!ENTITY advanced.label "Zaawansowany">
+<!ENTITY firstrun.descr "Zaleca się najpierw określić tryb pracy IE Tab +:">
+<!ENTITY restart.descr "Zmiany zostaną zastosowane po ponownym uruchomieniu Firefoksa.">
+<!ENTITY rules.column "Reguły">
+<!ENTITY enabled.column "Włączone">
+<!ENTITY cookies.column "Synch. ciasteczka">
+<!ENTITY useragent.column "Synch. ID przegl.">
+<!ENTITY switchback.column "Otwórz Firefoksa w nowym oknie">
+<!ENTITY settings.import-ietab "Importuj ustawienia z IETab">
+<!ENTITY switch.show-prompt "Podczas przełączania na IE, wyświetlaj powiadomienie „Spróbuj ponownie”">
+<!ENTITY context.edit.label "Edytuj regułę">
+<!ENTITY context.moveup.label "Przesuń w górę">
+<!ENTITY context.movedown.label "Przesuń w dół">
+<!ENTITY context.enable.label "Włącz">
+<!ENTITY context.disable.label "Wyłącz">
+<!ENTITY edit.label "Edytuj">
+<!ENTITY edit.accesskey "E">
+<!ENTITY cut.label "Wytnij">
+<!ENTITY cut.accesskey "W">
+<!ENTITY copy.label "Kopiuj">
+<!ENTITY copy.accesskey "K">
+<!ENTITY paste.label "Wklej">
+<!ENTITY paste.accesskey "K">
+<!ENTITY remove.label "Usuń">
+<!ENTITY remove.accesskey "U">
+<!ENTITY context.switchEngine "Zmień silnik renderujący">
+<!ENTITY context.switchEngineSafe "Zmień silnik (nie synchronizuj ID przeglądarki)">
+<!ENTITY context.switchEngineNoCookie "Zmień silnik (nie synchronizuj ciasteczek)">
+<!ENTITY context.settings "Ustawienia…">
+<!ENTITY features.adblock "Obsługuj Adblock Plusa (wymaga ponownego uruchomienia Firefoksa)">
+<!ENTITY features.synccookie "Synchronizuj ciasteczka">

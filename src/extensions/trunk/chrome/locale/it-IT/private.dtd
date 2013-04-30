@@ -1,0 +1,5 @@
+<!ENTITY privatebrowsingwarning.title "Il motore di IE non permette la navigazione anonima">
+<!ENTITY privatebrowsingwarning.intro1 "È stata avviata la navigazione anonima per &brandShortName;, ma non è supportata dal motore di IE.">
+<!ENTITY privatebrowsingwarning.intro2 "Se viene avviato il motore di IE, nella cronologia di Internet Explorer verranno memorizzati la cronologia di navigazione, quella di ricerca, di download e dei moduli, i cookie e i file temporanei Internet.">
+<!ENTITY privatewarning.whatShouldIDo.content "Se non si desidera che i dati personali vengano memorizzati, tornare al motore di &brandShortName;.">
+<!ENTITY privatewarning.expert.content "Se si desidera avviare comunque il motore di IE per visualizzare le pagine, fare clic su 'Continua'. Avviso: la navigazione anonima rimarrà attiva per le altre schede di &brandShortName; che non utilizzano il motore di IE.">

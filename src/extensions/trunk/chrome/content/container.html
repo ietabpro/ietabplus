@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><title></title>
+<link rel="icon" href="chrome://coralietab/skin/ietab-favicon-iedoc.png">
+<link type="text/css" rel="stylesheet" href="chrome://coralietab/skin/container.css"/>
+<script type="text/javascript" src="chrome://coralietab/content/jquery.js"></script>
+<script type="text/javascript" src="chrome://coralietab/content/ietabSetting.js"></script>
+<script type="text/javascript" src="chrome://coralietab/content/ietabUtils.js"></script>
+<script type="text/javascript" src="chrome://coralietab/content/containerUtils.js"></script>
+<script type="text/javascript">
+	
+	function showPrompt() {
+		var ts = "<table width='100%' cellspacing='0' cellpadding='2'><tbody><tr>" +
+		"<td><table width='100%' cellspacing='0' cellpadding='0'><tbody><tr>" +
+		"<td style='width:26px'><img height='24' width='24' alt='IE Icon' title='IE Tab Plus' id='IEIcon' src='chrome://coralietab/skin/ie-icon.png'/></td>" +
+		"<td style='padding-left: 10px;'><span style='font-family:tahoma,ËÎÌו; font-size:14px;'>" + gIeTab.GetLocalizedString("display_incorrect") +
+		"<input id='try_button' type='button' value=" + gIeTab.GetLocalizedString("click_me") + " style='margin-left: 20px' /></span></td>" +
+		"<td><p style='font-size: 75%; color: #999999;'>" + gIeTab.GetLocalizedString("hide_prompt") + "</p></td>" +
+		"</tr></tbody></table></td>" +
+		"<td align='right'><div style='padding-right: 8px;'><img id='closeBtn' height='16' width='16' alt='Close' src='chrome://coralietab/skin/close.png' />" +
+		"</div></td></tr></tbody></table>";
+		$("#prompt").append(ts);
+		
+		$("#closeBtn").hover(
+				function () { this.src = "chrome://coralietab/skin/closeHover.png"; },
+				function () { this.src = "chrome://coralietab/skin/close.png"; }
+			);
+			
+		$("#closeBtn").mouseup(function(){
+			this.src = "chrome://coralietab/skin/closeHover.png";
+			$("#prompt").hide();
+			var ietab = document.getElementById("IETab");
+			ietab.style.maxHeight = "none";
+			ietab.navigate2(null, 0x0002);	// null parameter will only reset flags
+		}).mousedown(function(){ this.src = "chrome://coralietab/skin/closeActive.png"; });
+				
+		$("#try_button").click(function () {
+			$("#prompt").hide();
+			
+			var ietab = document.getElementById("IETab");
+			ietab.style.maxHeight = "none";
+			
+			var m = /\?url=(\d+),(\S+)$/.exec(document.location.href);
+			var url = decodeURI(m[2]);
+			if (url == ietab.url) {
+				ietab.navigate2(null, 0x4001);
+				ietab.refresh();
+			}
+			else {
+				ietab.navigate2(url, 0x4001);	// 0x4000 means manual switch, 0x0001 means sync cookies
+			}
+		});
+		
+		$(window).resize(function() {
+			if ($("#prompt").is(':visible')) {
+				document.getElementById('IETab').style.maxHeight = document.documentElement.clientHeight - document.getElementById("prompt").scrollHeight;
+			}
+			else {
+				document.getElementById('IETab').style.maxHeight = "";
+			}
+		});
+	}
+	
+	$(document).ready(function() {
+		if ( isWindows() ) {
+			if ( checkOSVersion() ) {
+				if ( isInPrivateBrowsingMode() ) {
+					$("#container").append('<iframe src="PrivateBrowsingWarning.xhtml" width="100%" height="100%" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>');
+				}
+				else {
+					var ts = '<embed id="IETab" type="application/coralietab" style="width:100%;height:100%;';
+					
+					if ( shouldShowRetryPrompt() ) {
+						var maxHeight = document.documentElement.clientHeight;
+						showPrompt();
+						maxHeight -= document.getElementById("prompt").scrollHeight;
+						ts += 'max-height:' + maxHeight + 'px"></embed>';
+					}
+					else {
+						ts += '"></embed>';
+					}
+					 
+					setTimeout(function() {$("#container").append(ts);}, 100);
+						
+					registerEventHandler();
+				}
+			}
+			else {
+				$("#container").append('<center><p>The current version of IE Tab + can only work on Microsoft Windows XP SP2 or later.</p><p>However, you can still use the former version Coral IE Tab v1.85, which can be downloaded from:<br/><a href="https://addons.mozilla.org/en-US/firefox/downloads/file/85821/coral_ie_tab-1.85.20100407-fx+sm-win.xpi">Mozilla Addons Site</a></p><p>Apologize for your inconvenience.</p><center>');
+			}
+		}
+		else {
+			$("#container").append('<p align="center">IE Tab + can only work on 32bit Microsoft Windows.</p>');
+		}
+	});
+
+</script>
+</head>
+<body>
+	<div id="prompt" class="promptBar"></div>
+	<div id="container"></div>
+	<div id="adblock"></div>
+</body>
+</html>

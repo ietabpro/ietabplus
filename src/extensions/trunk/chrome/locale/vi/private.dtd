@@ -1,0 +1,5 @@
+<!ENTITY privatebrowsingwarning.title "Bộ máy IE không hỗ trợ chế độ Duyệt Web Riêng Tư">
+<!ENTITY privatebrowsingwarning.intro1 "Bạn đã từng khởi động chế độ Duyệt Web Riêng Tư cho &brandShortName;, nhưng nó không được bộ máy IE hỗ trợ.">
+<!ENTITY privatebrowsingwarning.intro2 "Nếu bạn khởi động bộ máy IE, lịch sử trình duyệt, lịch sử tìm kiếm, lịch sử tải xuống, lịch sử điền thông tin trên mạng, các cookie và các tệp tin internet tạm sẽ được ghi lại trong văn bản lịch sử IE.">
+<!ENTITY privatewarning.whatShouldIDo.content "Nếu bạn không muốn dữ liệu riêng tư của mình bị ghi lại, hãy chuyển về bộ máy &brandShortName;.">
+<!ENTITY privatewarning.expert.content "Nếu bạn vẫn muốn khởi động bộ máy IE để xem các trang, hãy ấn 'Tiếp tục'. Chú ý: các thẻ &brandShortName; khác không sử dụng bộ máy IE vẫn đang làm việc ở chế độ Duyệt Web Riêng Tư.">

@@ -1,0 +1,91 @@
+<!ENTITY dialog.title "אפשרויות IE Tab +">
+<!ENTITY toolsmenu.label "אפשרויות IE Tab +">
+<!ENTITY toolbar.button.label "IE Tab +">
+<!ENTITY toolbar.button.display "כפתור IE Tab +">
+<!ENTITY toolbar.button.tooltip0 "לחצן שמאלי: שינוי מנוע הרינדור של הדף הנוכחי.">
+<!ENTITY toolbar.button.tooltip1 "לחצן אמצעי: שימוש בלשונית חדשה לשינוי מנוע הרינדור.">
+<!ENTITY toolbar.button.tooltip2 "לחצן ימני: תפריט הלחצן הימני.">
+<!ENTITY popup.viewpage "הצגת העמוד בIE Tab +">
+<!ENTITY popup.viewpage.key "ה">
+<!ENTITY popup.viewlink "פתיחת קישור בIE Tab +">
+<!ENTITY popup.viewlink.key "פ">
+<!ENTITY popup.bookmark "פתיחה בעזרת IE Tab +">
+<!ENTITY popup.bookmark.key "ת">
+<!ENTITY popup.tabbar.switch "החלפת מנוע הרינדור">
+<!ENTITY popup.tabbar.switch.key "ח">
+<!ENTITY popup.viewpage.extapp "הצגת הדף ביישום חיצוני">
+<!ENTITY popup.viewpage.extapp.key "ג">
+<!ENTITY popup.viewlink.extapp "פתיחת הקישור ביישום חיצוני">
+<!ENTITY popup.viewlink.extapp.key "ק">
+<!ENTITY popup.bookmark.extapp "פתיחה ביישום חיצוני">
+<!ENTITY popup.bookmark.extapp.key "ח">
+<!ENTITY popup.tabbar.extapp "פתיחה ביישום חיצוני">
+<!ENTITY popup.tabbar.extapp.key "ב">
+<!ENTITY filter.label "מסנן אתרים">
+<!ENTITY filter.enabled "אפשור מסנן אתרים">
+<!ENTITY filter.column.rule "חוק">
+<!ENTITY filter.column.enabled "מאפשר">
+<!ENTITY filter.url.label "כתובת אינטרנט:">
+<!ENTITY filter.button.add "הוספה">
+<!ENTITY filter.button.delete "מחיקה">
+<!ENTITY general.label "הגדרות כלליות">
+<!ENTITY interface.caption "הצגה בממשק:">
+<!ENTITY interface.toolsmenu "פריט תפריט הכלים">
+<!ENTITY interface.toolsmenu.icon "אייקון תפריט הכלים">
+<!ENTITY interface.statusbar "אייקון סרגל המצב">
+<!ENTITY switch.caption "כאשר מנוע הרינדור מוחלף:">
+<!ENTITY switch.handleurl "תמיד נעשה שימוש במנוע הנוכחי כדי לפתוח כתובת אינטרנט חדשה">
+<!ENTITY switch.alwaysnew "פתיחה בלשונית חדשה כאשר מחליפים מנועים">
+<!ENTITY switch.focustab "התמקדות בלשונית החדשה כאשר מחליפים מנועים">
+<!ENTITY uipref.label "העדפות ממשק המשתמש">
+<!ENTITY context.caption.tabsmenu "תפריט הלחצן הימני של הלשוניות בסרגל הלשוניות, יציג הפריטים הבאים:">
+<!ENTITY context.caption.pagelink "תפריט הלחצן הימני של אזור התוכן יציג הפריטים הבאים:">
+<!ENTITY context.caption.bookmark "תפריט הלחצן הימני של הסימניות האישיות יציג הפריטים הבאים:">
+<!ENTITY context.embed "מנוע מוטמע">
+<!ENTITY context.extapp "יישום חיצוני">
+<!ENTITY context.icon "אייקון">
+<!ENTITY external.label "יישום חיצוני">
+<!ENTITY external.caption "הגדרות היישום החיצוני">
+<!ENTITY external.path.label "נתיב:">
+<!ENTITY external.param.label "משתנים:">
+<!ENTITY external.button.browse "דפדוף">
+<!ENTITY external.ctrlclick "לחיצה+Ctrl על כפתור IE Tab + כדי לפתוח את כתובת האינטרנט ביישום חיצוני.">
+<!ENTITY external.button.reset "שימוש באינטרנט אקספלורר">
+<!ENTITY apply.label "החל">
+<!ENTITY settings.label "יבוא\יצוא...">
+<!ENTITY settings.default "שיחזור ברירת המחדל">
+<!ENTITY settings.import "ייבוא הגדרות...">
+<!ENTITY settings.export "ייצוא הגדרות...">
+<!ENTITY mode.label "סגנון IE Tab +">
+<!ENTITY classic.label "סגנון קלאסי (מתואם עם IE Tab, יותר יציב)">
+<!ENTITY advanced.label "סגנון מתקדם">
+<!ENTITY firstrun.descr "מומלץ לבחור קודם בסגנון IE Tab + שעובד:">
+<!ENTITY restart.descr "הבחירה ששונתה תשפיע לאחר אתחול הדפדפן.">
+<!ENTITY rules.column "חוקים">
+<!ENTITY enabled.column "מאפשר">
+<!ENTITY cookies.column "סנכרון עוגיות">
+<!ENTITY useragent.column "סנכרון סוכן-משתמש">
+<!ENTITY switchback.column "החלפה לפיירפוקס בחזרה, בדף חדש">
+<!ENTITY settings.import-ietab "ייבוא הגדרות מIETab">
+<!ENTITY switch.show-prompt "הצגת הרמז 'לרענן' כאשר מחליפים לIE (אינטרנט אקספלורר)">
+<!ENTITY context.edit.label "עריכת החוק">
+<!ENTITY context.moveup.label "הזזת החוק מעלה">
+<!ENTITY context.movedown.label "הזזת החוק מטה">
+<!ENTITY context.enable.label "אפשור">
+<!ENTITY context.disable.label "נטרול">
+<!ENTITY edit.label "עריכה">
+<!ENTITY edit.accesskey "ע">
+<!ENTITY cut.label "גזור">
+<!ENTITY cut.accesskey "ג">
+<!ENTITY copy.label "העתק">
+<!ENTITY copy.accesskey "ה">
+<!ENTITY paste.label "העבר">
+<!ENTITY paste.accesskey "ב">
+<!ENTITY remove.label "מחק">
+<!ENTITY remove.accesskey "מ">
+<!ENTITY context.switchEngine "החלפת מנוע הרינדור">
+<!ENTITY context.switchEngineSafe "החלפת מנוע (ללא סנכרון סוכן משתמש)">
+<!ENTITY context.switchEngineNoCookie "החלפת מנוע (ללא סנכרון עוגיות)">
+<!ENTITY context.settings "הגדרות...">
+<!ENTITY features.adblock "תומך Adblock Plus">
+<!ENTITY features.synccookie "סנכרון עוגיות">

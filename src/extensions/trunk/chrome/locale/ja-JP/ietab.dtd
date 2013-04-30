@@ -1,0 +1,92 @@
+<!ENTITY dialog.title "IE Tab +の設定">
+<!ENTITY toolsmenu.label "IE Tab +の設定">
+<!ENTITY toolbar.button.label "IE Tab +">
+<!ENTITY toolbar.button.display "IE Tab +ボタン">
+<!ENTITY toolbar.button.tooltip0 "左クリック: レンダリングエンジンの切り替えます">
+<!ENTITY toolbar.button.tooltip1 "中クリック: 新しいタブを開いてレンダリングエンジンを切り替えます">
+<!ENTITY toolbar.button.tooltip2 "右クリック: IE Tab +のサイトフィルタを表示します">
+<!ENTITY popup.viewpage "IE Tab +で表示">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "IE Tab +でリンクを開く">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "IE Tab +で開く">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "レンダリングエンジンの切り替え">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "関連付けたアプリケーションで表示">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "関連付けたアプリケーションでリンクを開く">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "関連付けたアプリケーションで開く">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "関連付けたアプリケーションで開く">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "サイトフィルタ">
+<!ENTITY filter.enabled "サイトフィルタを有効">
+<!ENTITY filter.column.rule "ルール">
+<!ENTITY filter.column.enabled "有効">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "追加">
+<!ENTITY filter.button.delete "消去">
+<!ENTITY general.label "一般設定">
+<!ENTITY interface.caption "インターフェースの表示:">
+<!ENTITY interface.toolsmenu "ツールメニューの項目">
+<!ENTITY interface.toolsmenu.icon "ツールメニューのアイコン">
+<!ENTITY interface.statusbar "ステータスバーアイコン">
+<!ENTITY switch.caption "レンダリングエンジンを切り替える時:">
+<!ENTITY switch.handleurl "常に現在のレンダリングエンジンでURLを開く">
+<!ENTITY switch.alwaysnew "レンダリングエンジンを切り替える時に新しいタブで開く">
+<!ENTITY switch.focustab "新しいタブで開いた時にすぐにそのタブに切り替える">
+<!ENTITY uipref.label "表示設定">
+<!ENTITY context.caption.tabsmenu "タブのコンテキストメニューに表示する項目:">
+<!ENTITY context.caption.pagelink "コンテンツエリアに表示する項目:">
+<!ENTITY context.caption.bookmark "パーソナルブックマークメニューに表示する項目:">
+<!ENTITY context.embed "埋め込まれたエンジン">
+<!ENTITY context.extapp "アプリケーションの関連付け">
+<!ENTITY context.icon "アイコン">
+<!ENTITY external.label "アプリケーションの関連付け">
+<!ENTITY external.caption "アプリケーションの関連付けの設定">
+<!ENTITY external.path.label "パス:">
+<!ENTITY external.param.label "パラメータ:">
+<!ENTITY external.button.browse "参照">
+<!ENTITY external.ctrlclick "Ctrl+クリックでIE Tab +に関連付けたアプリケーションでURLを開く">
+<!ENTITY external.button.reset "Internet Explorerを使用する">
+<!ENTITY apply.label "適用">
+<!ENTITY settings.label "インポート/エクスポート...">
+<!ENTITY settings.default "デフォルトに復元">
+<!ENTITY settings.import "設定をインポート...">
+<!ENTITY settings.export "設定をエクスポート...">
+<!ENTITY mode.label "IE Tab + 動作モード設定">
+<!ENTITY classic.label "クラシックモード (IE Tab互換：安定性重視)">
+<!ENTITY advanced.label "アドバンスモード">
+<!ENTITY firstrun.descr "最初にIE Tab + の動作モードを選択してください">
+<!ENTITY restart.descr "&brandShortName;の再起動後に変更が反映されます">
+
+<!ENTITY rules.column "ルール">
+<!ENTITY enabled.column "有効">
+<!ENTITY cookies.column "Cookieを同期">
+<!ENTITY useragent.column "User-Agentを同期">
+<!ENTITY switchback.column "&brandShortName;の切り替え時に新しいページに戻す">
+<!ENTITY settings.import-ietab "IETabから設定をインポート">
+<!ENTITY switch.show-prompt "IEに切り替えたら情報バーを表示する">
+<!ENTITY context.edit.label         "ルールを編集">
+<!ENTITY context.moveup.label       "ルールを上に移動">
+<!ENTITY context.movedown.label     "ルールを下に移動">
+<!ENTITY context.enable.label       "有効">
+<!ENTITY context.disable.label      "無効">
+<!ENTITY edit.label                 "編集">
+<!ENTITY edit.accesskey             "E">
+<!ENTITY cut.label                  "切り取り">
+<!ENTITY cut.accesskey              "T">
+<!ENTITY copy.label                 "コピー">
+<!ENTITY copy.accesskey             "C">
+<!ENTITY paste.label                "貼り付け">
+<!ENTITY paste.accesskey            "P">
+<!ENTITY remove.label               "消去">
+<!ENTITY remove.accesskey           "D">
+<!ENTITY context.switchEngine "レンダリングエンジンの切り替え">
+<!ENTITY context.switchEngineSafe "エンジンの切り替え(User-Agentの同期なし)">
+<!ENTITY context.switchEngineNoCookie "エンジンの切り替え(Cookieの同期なし)">
+<!ENTITY context.settings "設定">
+<!ENTITY features.adblock "AdblockPlusをサポートする">
+<!ENTITY features.synccookie "Cookieを同期する">

@@ -1,0 +1,91 @@
+<!ENTITY dialog.title "Opciones de IE Tab +">
+<!ENTITY toolsmenu.label "Opciones de IE Tab +">
+<!ENTITY toolbar.button.label "IE Tab +">
+<!ENTITY toolbar.button.display "Botón de IE Tab +">
+<!ENTITY toolbar.button.tooltip0 "Click izquierdo: Cambiar de motor en la página actual">
+<!ENTITY toolbar.button.tooltip1 "Click central: Cambiar de motor en pestaña nueva">
+<!ENTITY toolbar.button.tooltip2 "Click derecho: Menú contextual">
+<!ENTITY popup.viewpage "Ver esta página con IE Tab +">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Abrir enlace con IE Tab +">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Abrir con IE Tab +">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Cambiar de motor">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Abrir página en aplicación externa">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "Abrir enlace en aplicación externa">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "Abrir en aplicación externa">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "Abrir en aplicación externa">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "Filtro de sitios">
+<!ENTITY filter.enabled "Habilitar filtro de sitios">
+<!ENTITY filter.column.rule "Regla">
+<!ENTITY filter.column.enabled "Activada">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "Añadir">
+<!ENTITY filter.button.delete "Borrar">
+<!ENTITY general.label "Opciones generales">
+<!ENTITY interface.caption "Mostrar en el navegador:">
+<!ENTITY interface.toolsmenu "Elemento del menú Herramientas">
+<!ENTITY interface.toolsmenu.icon "Icono del menú Herramientas">
+<!ENTITY interface.statusbar "Icono de la barra de estado">
+<!ENTITY switch.caption "Cuando se cambie de motor:">
+<!ENTITY switch.handleurl "Utilizar siempre el motor en uso para abrir nuevas direcciones">
+<!ENTITY switch.alwaysnew "Utilizar siempre una pestaña nueva al cambiar de motor">
+<!ENTITY switch.focustab "Seleccionar la pestaña nueva">
+<!ENTITY uipref.label "Preferencias de Interfaz">
+<!ENTITY context.caption.tabsmenu "El Menu contextual de la barra de pestañas muestra los siguientes elementos:">
+<!ENTITY context.caption.pagelink "El menu contextual del área de contenidos muestra los siguientes elementos:">
+<!ENTITY context.caption.bookmark "El menu contextual de marcadores muestra los siguientes elementos:">
+<!ENTITY context.embed "Motor interno">
+<!ENTITY context.extapp "Aplicación externa">
+<!ENTITY context.icon "Icono">
+<!ENTITY external.label "Aplicación externa">
+<!ENTITY external.caption "Opciones de la aplicación externa">
+<!ENTITY external.path.label "Ubicación:">
+<!ENTITY external.param.label "Parámetros:">
+<!ENTITY external.button.browse "Explorar">
+<!ENTITY external.ctrlclick "Hacer Ctrl+Click en el botón de IE Tab + para abrir en la aplicación externa">
+<!ENTITY external.button.reset "Usar Internet Explorer">
+<!ENTITY apply.label "Aplicar">
+<!ENTITY settings.label "Opciones">
+<!ENTITY settings.default "Opciones por defecto">
+<!ENTITY settings.import "Importar opciones">
+<!ENTITY settings.export "Exportar opciones">
+<!ENTITY mode.label "Modo de ejecución de IE Tab +">
+<!ENTITY classic.label "Modo Clásico (Compatible con IETab, más estable)">
+<!ENTITY advanced.label "Modo Avanzado">
+<!ENTITY firstrun.descr "Se recomienda seleccionar el modo de ejecución de IE Tab + primero:">
+<!ENTITY restart.descr "Las selecciones modificadas tendrán efecto después de reiniciar &brandShortName;.">
+<!ENTITY rules.column "Reglas">
+<!ENTITY enabled.column "Activada">
+<!ENTITY cookies.column "Sinc. Cookies">
+<!ENTITY useragent.column "Sinc. Ident. Navegador">
+<!ENTITY switchback.column "Retornar a &brandShortName; en página nueva">
+<!ENTITY settings.import-ietab "Importar opciones de IETab">
+<!ENTITY switch.show-prompt "Mostrar mensaje 'Reintentar' cuando se cambie a IE">
+<!ENTITY context.edit.label "Editar regla">
+<!ENTITY context.moveup.label "Mover regla arriba">
+<!ENTITY context.movedown.label "Mover regla abajo">
+<!ENTITY context.enable.label "Habilitar">
+<!ENTITY context.disable.label "Desabilitar">
+<!ENTITY edit.label "Editar">
+<!ENTITY edit.accesskey "E">
+<!ENTITY cut.label "Cortar">
+<!ENTITY cut.accesskey "T">
+<!ENTITY copy.label "Copiar">
+<!ENTITY copy.accesskey "C">
+<!ENTITY paste.label "Pegar">
+<!ENTITY paste.accesskey "P">
+<!ENTITY remove.label "Borrar">
+<!ENTITY remove.accesskey "B">
+<!ENTITY context.switchEngine "Cambiar de Motor">
+<!ENTITY context.switchEngineSafe "Cambiar de Motor (No Sincroniza Ident. Navegador)">
+<!ENTITY context.switchEngineNoCookie "Cambiar de Motor (No Sincroniza Cookies)">
+<!ENTITY context.settings "Opciones...">
+<!ENTITY features.adblock "Soportar Adblock Plus">
+<!ENTITY features.synccookie "Sincronizar Cookies">

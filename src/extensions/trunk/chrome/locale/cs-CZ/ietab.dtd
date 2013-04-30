@@ -1,0 +1,91 @@
+<!ENTITY dialog.title "Nastavení IE Tab +">
+<!ENTITY toolsmenu.label "Nastavení IE Tab +">
+<!ENTITY toolbar.button.label "IE Tab +">
+<!ENTITY toolbar.button.display "IE Tab + Tlačítka">
+<!ENTITY toolbar.button.tooltip0 "Levé tlačítko: Přepni vykreslovací jádro pro tuto stránku.">
+<!ENTITY toolbar.button.tooltip1 "Prostřední tlačítko: Přepni vykreslovací jádro pro tuto stránku v nové záložce.">
+<!ENTITY toolbar.button.tooltip2 "Pravé tlačítko: Zobraz kontextové menu.">
+<!ENTITY popup.viewpage "Prohlížet stránku v IE Tab +">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Otevřít Link v IE Tab +">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Otevřít v IE Tab +">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Přepnout vykreslovací jádro">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Otevřít stránku v externí aplikaci">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "Otevřít odkaz v externí aplikaci">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "Otevřít v externí aplikaci">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "Otevřít v externí aplikaci">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "Filtrování stránek">
+<!ENTITY filter.enabled "Zapnout fitrování stránek">
+<!ENTITY filter.column.rule "Pravidlo">
+<!ENTITY filter.column.enabled "Zapnuto">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "Přidat">
+<!ENTITY filter.button.delete "Smazat">
+<!ENTITY general.label "Obecná nastavení">
+<!ENTITY interface.caption "Integrace ovládacích prvků do prohlížeče:">
+<!ENTITY interface.toolsmenu "Textová položka v nabídce Nástroje">
+<!ENTITY interface.toolsmenu.icon "Ikona v nabídce Nástroje">
+<!ENTITY interface.statusbar "Ikona ve stavovém řádku">
+<!ENTITY switch.caption "Možnosti přepínání vykreslovacího jádra:">
+<!ENTITY switch.handleurl "Pro otevření nové URL vždy použít aktuální jádro">
+<!ENTITY switch.alwaysnew "Při přepínání jádra otevřít v novém panelu">
+<!ENTITY switch.focustab "Při přepínání jádra do nového panelu na nový panel přepnout">
+<!ENTITY uipref.label "Uživatelské rozhraní">
+<!ENTITY context.caption.tabsmenu "Kontextové menu panelu:">
+<!ENTITY context.caption.pagelink "Kontextové menu v těle stránky:">
+<!ENTITY context.caption.bookmark "Kontextové menu záložky:">
+<!ENTITY context.embed "Vestavěné jádro">
+<!ENTITY context.extapp "Externí aplikace">
+<!ENTITY context.icon "Ikony">
+<!ENTITY external.label "Externí aplikace">
+<!ENTITY external.caption "Nastavení externí aplikace">
+<!ENTITY external.path.label "Cesta:">
+<!ENTITY external.param.label "Parametry:">
+<!ENTITY external.button.browse "Procházet">
+<!ENTITY external.ctrlclick "Ctrl + kliknutí na tlačítko IE Tab + otevře URL v externí aplikaci">
+<!ENTITY external.button.reset "Nastavit jako externí aplikaci Internet Explorer">
+<!ENTITY apply.label "Použít">
+<!ENTITY settings.label "Import/Export...">
+<!ENTITY settings.default "Obnovit výchozí">
+<!ENTITY settings.import "Importovat nastavení...">
+<!ENTITY settings.export "Exportovat nastavení...">
+<!ENTITY mode.label "Pracovní režim IE Tab +">
+<!ENTITY classic.label "Klasický režim (kompatibilní s IE Tab, stabilnější)">
+<!ENTITY advanced.label "Rozšířený režim">
+<!ENTITY firstrun.descr "Jako první krok je vhodné zvolit pracovní režim IE Tab +:">
+<!ENTITY restart.descr "Změny se projeví až po restartu Firefoxu.">
+<!ENTITY rules.column "Pravidlo">
+<!ENTITY enabled.column "Zapnuto">
+<!ENTITY cookies.column "Synch. cookie">
+<!ENTITY useragent.column "Synch. hl. User-Agent">
+<!ENTITY switchback.column "Další stránku přepnout zpět na &brandShortName;">
+<!ENTITY settings.import-ietab "Import nastavení z IETab">
+<!ENTITY switch.show-prompt "Při přepnutí na jádro IE zobrazit lištu s tlačítkem Opakovat">
+<!ENTITY context.edit.label "Upravit pravidlo">
+<!ENTITY context.moveup.label "Přesnout pravidlo nahoru">
+<!ENTITY context.movedown.label "Přesunout pravidlo dolů">
+<!ENTITY context.enable.label "Zapnout">
+<!ENTITY context.disable.label "Vypnout">
+<!ENTITY edit.label "Upravit">
+<!ENTITY edit.accesskey "E">
+<!ENTITY cut.label "Vyjmout">
+<!ENTITY cut.accesskey "T">
+<!ENTITY copy.label "Kopírovat">
+<!ENTITY copy.accesskey "C">
+<!ENTITY paste.label "Vložit">
+<!ENTITY paste.accesskey "P">
+<!ENTITY remove.label "Smazat">
+<!ENTITY remove.accesskey "D">
+<!ENTITY context.switchEngine "Přepnout vykreslovací jádro">
+<!ENTITY context.switchEngineSafe "Přepnout vykreslovací jádro (nesynchronizuj hlavičku User-Agent)">
+<!ENTITY context.switchEngineNoCookie "Přepnout vykreslovací jádro (nesynchronizuj cookies)">
+<!ENTITY context.settings "Nastavení...">
+<!ENTITY features.adblock "Podpora pro Adblock Plus">
+<!ENTITY features.synccookie "Synchronizovat cookies">
