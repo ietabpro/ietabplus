@@ -1,0 +1,5 @@
+<!ENTITY privatebrowsingwarning.title "Jádro IE nepodporuje režim anonymního prohlížení">
+<!ENTITY privatebrowsingwarning.intro1 "&brandShortName; je spuštěn v režimu anonymního prohlížení, který není jádrem IE podporován.">
+<!ENTITY privatebrowsingwarning.intro2 "Při používání jádra IE se záznamy o navštívených stránkách, historie vyhledávání, stahování, webových formulářů, cookies a dočasné soubory z Internetu ukládají do příslušných záznamů IE.">
+<!ENTITY privatewarning.whatShouldIDo.content "Pokud si nepřejete, aby byly tyto soukromé údaje zaznamenány, přepněte zpět do jádra prohlížeče &brandShortName;.">
+<!ENTITY privatewarning.expert.content "Pokud přesto chcete stránku zobrazit pomocí jádra IE, klikněte na 'Pokračovat'. Ostatní panely jádra prohlížeče &brandShortName; zůstanou v režimu anonymního prohlížení.">

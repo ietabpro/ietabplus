@@ -1,0 +1,5 @@
+<!ENTITY privatebrowsingwarning.title "IE nepodporuje Súkromné prehliadanie">
+<!ENTITY privatebrowsingwarning.intro1 "Spustili ste súkromné prehliadanie pre &brandShortName;, ktoré ale nie je podporované IE.">
+<!ENTITY privatebrowsingwarning.intro2 "Ak spustíte IE, Vaša história prehliadača, vyhľadávania, sťahovania, webových formulárov, cookies a dočasné internetové súbory budú zaznamenané v denníkoch histórie IE.">
+<!ENTITY privatewarning.whatShouldIDo.content "Ak nechcete, aby vaše súkromné dáta boli zaznamenávané, prepnite prosím na &brandShortName;.">
+<!ENTITY privatewarning.expert.content "Ak stále chcete spustiť IE na prezeranie stránok, stlačte prosím 'Pokračovať'. Upozornenie: Iné &brandShortName; karty, nepoužívajúce IE sú stále v súkromnom prehliadaní.">

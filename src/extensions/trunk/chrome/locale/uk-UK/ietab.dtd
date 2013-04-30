@@ -1,0 +1,91 @@
+<!ENTITY dialog.title "Налаштування IE Tab +">
+<!ENTITY toolsmenu.label "Налаштування IE Tab +">
+<!ENTITY toolbar.button.label "IE Tab +">
+<!ENTITY toolbar.button.display "Кнопка IE Tab +">
+<!ENTITY toolbar.button.tooltip0 "Left-Click: Перемкнути движок на поточній стрінці.">
+<!ENTITY toolbar.button.tooltip1 "Middle-Click: Перемкнути движок, відкривши нову вкладку.">
+<!ENTITY toolbar.button.tooltip2 "Right-Click: Контекстне меню.">
+<!ENTITY popup.viewpage "Переглянути сторінку в IE Tab +">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Відкрити посилання в IE Tab +">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Відкрити в IE Tab +">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Перемкнути движок">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Відкрити сторінку в зовнішньому додатку">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "Відкрити посилання в зовнішньому додатку">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "Відкрити в зовнішньому додатку">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "Відкрити в зовнішньому додатку">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "Фільтр сайтів">
+<!ENTITY filter.enabled "Включити фільтр сайтів">
+<!ENTITY filter.column.rule "Правило">
+<!ENTITY filter.column.enabled "Активне">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "Додати">
+<!ENTITY filter.button.delete "Видалити">
+<!ENTITY general.label "Загальні">
+<!ENTITY interface.caption "Показати в інтерфейсі:">
+<!ENTITY interface.toolsmenu "Пункт в меню «Інструменти»">
+<!ENTITY interface.toolsmenu.icon "Значок в меню «Інструменти»">
+<!ENTITY interface.statusbar "Значок в рядку статусу">
+<!ENTITY switch.caption "При перемиканні движка:">
+<!ENTITY switch.handleurl "Завжди відкривати новий URL на поточному движку">
+<!ENTITY switch.alwaysnew "При зміні движка відкривати нову вкладку">
+<!ENTITY switch.focustab "При зміні движка робити активною нову вкладку">
+<!ENTITY uipref.label "Інтерфейс">
+<!ENTITY context.caption.tabsmenu "Показати наступні пункти в контекстному меню заголовку вкладки:">
+<!ENTITY context.caption.pagelink "Показати наступні пункти в контекстному меню сторінки:">
+<!ENTITY context.caption.bookmark "Показати наступні пункти в контекстному меню закладок:">
+<!ENTITY context.embed "Вбудований движок (Gecko)">
+<!ENTITY context.extapp "Зовнішній додаток">
+<!ENTITY context.icon "Значок">
+<!ENTITY external.label "Зовнішній додаток">
+<!ENTITY external.caption "Налагодження зовнішнього додатку">
+<!ENTITY external.path.label "Шлях до файлу додатку:">
+<!ENTITY external.param.label "Параметри:">
+<!ENTITY external.button.browse "Огляд…">
+<!ENTITY external.ctrlclick "Використовувати Ctrl+Click в IE Tab + для відкриття URL в зовнішньому додатку">
+<!ENTITY external.button.reset "Використовувати Internet Explorer">
+<!ENTITY apply.label "Застосувати">
+<!ENTITY settings.label "Імпорт/Експорт…">
+<!ENTITY settings.default "Відновити настройки по замовчуванню">
+<!ENTITY settings.import "Імпортувати настройки…">
+<!ENTITY settings.export "Експортувати настройки…">
+<!ENTITY mode.label "Режим IE Tab +">
+<!ENTITY classic.label "Класичний режим (сумісний з IE Tab, більш стабільний)">
+<!ENTITY advanced.label "Розширений режим">
+<!ENTITY firstrun.descr "Спочатку оберіть режим функціонування IE Tab +:">
+<!ENTITY restart.descr "Зміни будуть задіяні після перезапуску &brandShortName;.">
+<!ENTITY rules.column "Правила">
+<!ENTITY enabled.column "Активне">
+<!ENTITY cookies.column "Синхронізувати куки">
+<!ENTITY useragent.column "Синхронізувати User-Agent">
+<!ENTITY switchback.column "Перемкнутися назад в Gecko на новій сторінці">
+<!ENTITY settings.import-ietab "Імпортувати настройки із IE Tab">
+<!ENTITY switch.show-prompt "Показувати підказку «Повторити» при перемиканні в IE">
+<!ENTITY context.edit.label "Редагувати правило">
+<!ENTITY context.moveup.label "Здвинути вгору">
+<!ENTITY context.movedown.label "Здвинути вниз">
+<!ENTITY context.enable.label "Увімкнути">
+<!ENTITY context.disable.label "Вимкнути">
+<!ENTITY edit.label "Редагувати">
+<!ENTITY edit.accesskey "E">
+<!ENTITY cut.label "Вирізати">
+<!ENTITY cut.accesskey "T">
+<!ENTITY copy.label "Копіювати">
+<!ENTITY copy.accesskey "C">
+<!ENTITY paste.label "Вставити">
+<!ENTITY paste.accesskey "P">
+<!ENTITY remove.label "Видалити">
+<!ENTITY remove.accesskey "D">
+<!ENTITY context.switchEngine "Перемкнути движок">
+<!ENTITY context.switchEngineSafe "Перемкнути движок (без зміни User Agent)">
+<!ENTITY context.switchEngineNoCookie "Перемкнути движок (без синхронізації куки)">
+<!ENTITY context.settings "Налагодження…">
+<!ENTITY features.adblock "Підтримка Adblock Plus">
+<!ENTITY features.synccookie "Синхронізація куки">

@@ -1,0 +1,5 @@
+<!ENTITY privatebrowsingwarning.title "IE-Browser-Engine unterstützt den Privaten Modus nicht">
+<!ENTITY privatebrowsingwarning.intro1 "Sie haben &brandShortName; im Privaten Modus gestartet, dies wird von der IE-Browser-Engine nicht unterstützt.">
+<!ENTITY privatebrowsingwarning.intro2 "Beim Starten der IE-Browser-Engine werden ihre besuchten Seiten, eingegebenen Suchbegriffe, Download-Chronik, Formulardaten, Cookies und der Cache im IE-Browserverlauf gespeichert.">
+<!ENTITY privatewarning.whatShouldIDo.content "Falls Ihre privaten Daten nicht gespeichert werden sollen, wechseln Sie bitte wieder zurück zur &brandShortName;-Browser-Engine.">
+<!ENTITY privatewarning.expert.content "Falls Sie trotzdem die IE-Browser-Engine zur Ansicht der Seiten verwenden möchten, klicken Sie auf 'Weiter'. Hinweis: Andere &brandShortName;-Tabs, die nicht die IE-Browser-Engine verwenden, arbeiten weiterhin im Privaten Modus.">

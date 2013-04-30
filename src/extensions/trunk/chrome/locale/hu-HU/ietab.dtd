@@ -1,0 +1,91 @@
+﻿<!ENTITY dialog.title "IE Tab + beállítások">
+<!ENTITY toolsmenu.label "IE Tab + beállítások">
+<!ENTITY toolbar.button.label "IE Tab +">
+<!ENTITY toolbar.button.display "IE Tab + gomb">
+<!ENTITY toolbar.button.tooltip0 "Bal egérgomb: Megjelenítő motor váltása az aktuális oldalon.">
+<!ENTITY toolbar.button.tooltip1 "Középső egérgomb: Megnyitás új fülön másik megjelenítő motorral.">
+<!ENTITY toolbar.button.tooltip2 "Jobb egérgomb: Környezeti menü megnyitása.">
+<!ENTITY popup.viewpage "Oldal megtekintése IE Tab +bal">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Hivatkozás megtekintése IE Tab +bal">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Megnyitás IE Tab +bal">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Megjelenítő motor váltása">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Oldal megnyitása külső alk.-ban">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "Hivatkozás megnyitása külső alk.-ban">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "Megnyitás külső alk.-ban">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "Megnyitás külső alk.-ban">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "Oldalszűrő">
+<!ENTITY filter.enabled "Oldalszűrő engedélyezése">
+<!ENTITY filter.column.rule "Szabály">
+<!ENTITY filter.column.enabled "Engedélyezve">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "Hozzáadás">
+<!ENTITY filter.button.delete "Törlés">
+<!ENTITY general.label "Általános beállítások">
+<!ENTITY interface.caption "Megjelenítés:">
+<!ENTITY interface.toolsmenu "Az Eszközök menüben">
+<!ENTITY interface.toolsmenu.icon "Az eszköztáron">
+<!ENTITY interface.statusbar "Az állapotsoron">
+<!ENTITY switch.caption "Megjelenítő motor váltásánál:">
+<!ENTITY switch.handleurl "Mindig az aktuális megjelenítő motorral nyíljon meg az új URL">
+<!ENTITY switch.alwaysnew "Mindig új fülön nyíljon meg másik megjelenítő motorral az új URL">
+<!ENTITY switch.focustab "Új fül előtérbe hozása">
+<!ENTITY uipref.label "Menüelemek">
+<!ENTITY context.caption.tabsmenu "A fülek sávjának környezeti menüjében:">
+<!ENTITY context.caption.pagelink "Az oldalak környezeti menüjében:">
+<!ENTITY context.caption.bookmark "A könyvjelzők környezeti menüjében:">
+<!ENTITY context.embed "Megjelenítő motor">
+<!ENTITY context.extapp "Külső alkalmazás">
+<!ENTITY context.icon "Ikon">
+<!ENTITY external.label "Külső alkalmazás">
+<!ENTITY external.caption "Külső alkalmazás beállításai">
+<!ENTITY external.path.label "Útvonal:">
+<!ENTITY external.param.label "Paraméterek:">
+<!ENTITY external.button.browse "Tallózás">
+<!ENTITY external.ctrlclick "Ctrl+kattintás a IE Tab + gombon külső alk.-ban való megnyitáshoz.">
+<!ENTITY external.button.reset "Internet Explorer Használata">
+<!ENTITY apply.label "Alkalmaz">
+<!ENTITY settings.label "Importálás/Exportálás...">
+<!ENTITY settings.default "Alapértelmezett">
+<!ENTITY settings.import "Beállítások importálása...">
+<!ENTITY settings.export "Beállítások exportálása...">
+<!ENTITY mode.label "IE Tab + mód">
+<!ENTITY classic.label "Klasszikus mód(IE Tabbal kompatibilis, stabilabb)">
+<!ENTITY advanced.label "Haladó">
+<!ENTITY firstrun.descr "Ajánlott először egy működő IE Tab + módot választani:">
+<!ENTITY restart.descr "A változtatások a &brandShortName; újraindítása után lépnek érvénybe.">
+<!ENTITY rules.column "Szabályok">
+<!ENTITY enabled.column "Engedélyezve">
+<!ENTITY cookies.column "Sütik szinkronizálása">
+<!ENTITY useragent.column "Felhasználó szinkronizálása">
+<!ENTITY switchback.column "&brandShortName; megjelenítő motorra váltás új fülben">
+<!ENTITY settings.import-ietab "Beállítások importálása IE Tabból">
+<!ENTITY switch.show-prompt "'Újra' sáv mutatása IE motorra váltásnál">
+<!ENTITY context.edit.label "Szabály szerkesztése">
+<!ENTITY context.moveup.label "Szabály eggyel feljebb">
+<!ENTITY context.movedown.label "Szabály eggyel lejjebb">
+<!ENTITY context.enable.label "Engedélyez">
+<!ENTITY context.disable.label "Letilt">
+<!ENTITY edit.label "Szerkeszt">
+<!ENTITY edit.accesskey "E">
+<!ENTITY cut.label "Kivágás">
+<!ENTITY cut.accesskey "T">
+<!ENTITY copy.label "Másolás">
+<!ENTITY copy.accesskey "C">
+<!ENTITY paste.label "Beillesztés">
+<!ENTITY paste.accesskey "P">
+<!ENTITY remove.label "Törlés">
+<!ENTITY remove.accesskey "D">
+<!ENTITY context.switchEngine "Megjelenítő motor váltása">
+<!ENTITY context.switchEngineSafe "Megjelenítő motor váltása (Felhasználó szinkronizálása nélkül)">
+<!ENTITY context.switchEngineNoCookie "Megjelenítő motor váltása(Sütik szinkronizálása nélkül)">
+<!ENTITY context.settings "Beállítások...">
+<!ENTITY features.adblock "Adblock Plus támogatás">
+<!ENTITY features.synccookie "Sütik szinkronizálása">

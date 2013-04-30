@@ -1,0 +1,5 @@
+<!ENTITY privatebrowsingwarning.title "O motor do IE não suporta a Navegação Privada">
+<!ENTITY privatebrowsingwarning.intro1 "Iniciou a Navegação Privada para o &amp; brandShortName;, mas esta não é suportada pelo motor do IE.">
+<!ENTITY privatebrowsingwarning.intro2 "Se ligar o motor do IE, o histórico do navegador, histórico de busca, histórico de download, histórico de formulários web, cookies e ficheiros temporários de internet serão gravados nos logs de histórico do IE.">
+<!ENTITY privatewarning.whatShouldIDo.content "Se não deseja que seus dados pessoais sejam gravados, por favor volte ao motor do &amp; brandShortName;.">
+<!ENTITY privatewarning.expert.content "Se ainda assim quiser ligar o motor do IE para visualizar as páginas, por favor clique em 'Continuar'. Aviso: Outros separadores do &amp; brandShortName; que não estejam a utilizar o motor do IE ainda estão em Navegação Privada.">

@@ -1,0 +1,5 @@
+<!ENTITY privatebrowsingwarning.title "Motorul IE nu suportă navigarea fără urme">
+<!ENTITY privatebrowsingwarning.intro1 "Ați început navigarea fără urme pentru &brandShortName;, însă aceasta nu este suportată de motorul de interpretare IE.">
+<!ENTITY privatebrowsingwarning.intro2 "Dacă porniți motorului de interpretare IE, istoricul navigării, al căutărilor, al descărcărilor, al formularelor web, modulele cookie și fișierele temporare internet vor fi înregistrate în jurnalele IE.">
+<!ENTITY privatewarning.whatShouldIDo.content "Dacă nu doriți ca datele dumneavoastră personale să fie înregistrate, vă rugăm să reveniți la motorul de interpretare &brandShortName;.">
+<!ENTITY privatewarning.expert.content "Dacă totuși doriți să porniți motorul IE pentru afișarea paginilor, faceți clic pe „Continuă“. Notă: Alte file &brandShortName; care nu folosesc motorul IE sunt încă în sesiuni de navigare fără urme.">

@@ -1,0 +1,91 @@
+<!ENTITY dialog.title "Tùy chọn IE Tab +">
+<!ENTITY toolsmenu.label "Tùy chọn IE Tab +">
+<!ENTITY toolbar.button.label "IE Tab +">
+<!ENTITY toolbar.button.display "Nút IE Tab +">
+<!ENTITY toolbar.button.tooltip0 "Nhấp chuột trái: Thay đổi bộ máy quét lớp của trang này.">
+<!ENTITY toolbar.button.tooltip1 "Nhấp chuột giữa: sử dụng thẻ mới để thay đổi bộ máy quét lớp.">
+<!ENTITY toolbar.button.tooltip2 "Nhấp chuột phải: Trình đơn ngữ cảnh">
+<!ENTITY popup.viewpage "Mở trang trong IE Tab +">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Mở liên kết trong IE Tab +">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Mở trong IE Tab +">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Thay đổi bộ máy quét lớp">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Xem trang trong Ext.App.">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "Mở liên kết trong Ext.App.">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "Mở trong Ext.App.">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "Mở trong Ext.App.">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "Bộ lọc trang">
+<!ENTITY filter.enabled "Cho phép Bộ lọc trang">
+<!ENTITY filter.column.rule "Quy tắc">
+<!ENTITY filter.column.enabled "Bật">
+<!ENTITY filter.url.label "Địa chỉ trang:">
+<!ENTITY filter.button.add "Thêm">
+<!ENTITY filter.button.delete "Xóa">
+<!ENTITY general.label "Các thiết đặt chung">
+<!ENTITY interface.caption "Hiển thị trên giao diện">
+<!ENTITY interface.toolsmenu "Mục trình đơn công cụ">
+<!ENTITY interface.toolsmenu.icon "Biểu tượng trình đơn công cụ">
+<!ENTITY interface.statusbar "Biểu tượng thanh Trạng Thái">
+<!ENTITY switch.caption "Khi chuyển đổi bộ máy quét lớp:">
+<!ENTITY switch.handleurl "Luôn sử dụng bộ máy quét lớp hiện tại để mở trang mới">
+<!ENTITY switch.alwaysnew "Mở trong một thẻ mới khi chuyển đổi bộ máy quét lớp">
+<!ENTITY switch.focustab "Chuyển sang xem thẻ mới khi chuyển đổi bộ máy quét lớp">
+<!ENTITY uipref.label "Tùy chỉnh giao diện">
+<!ENTITY context.caption.tabsmenu "Trình đơn ngữ cảnh của thanh chứa các thẻ sẽ hiển thị các mục sau:">
+<!ENTITY context.caption.pagelink "Trình đơn ngữ cảnh của Vùng Nội Dung sẽ hiển thị các mục sau:">
+<!ENTITY context.caption.bookmark "Trình đơn ngữ cảnh của các trang được đánh dấu sẽ hiển thị các mục sau:">
+<!ENTITY context.embed "Bộ máy được tích hợp">
+<!ENTITY context.extapp "Ứng dụng ngoài">
+<!ENTITY context.icon "Biểu tượng">
+<!ENTITY external.label "Ứng dụng ngoài">
+<!ENTITY external.caption "Thiết lập ứng dụng ngoài">
+<!ENTITY external.path.label "Đường dẫn:">
+<!ENTITY external.param.label "Thông số:">
+<!ENTITY external.button.browse "Chọn">
+<!ENTITY external.ctrlclick "Ấn nút CTRL và nhấp chuột trái vào nút IE Tab + để mở trang trong Ext.App.">
+<!ENTITY external.button.reset "Sử dụng Internet Explorer">
+<!ENTITY apply.label "Áp dụng">
+<!ENTITY settings.label "Nhập vào/Xuất ra...">
+<!ENTITY settings.default "Khôi phục mặc định">
+<!ENTITY settings.import "Nhập các thiết đặt vào...">
+<!ENTITY settings.export "Xuất các thiết đặt ra...">
+<!ENTITY mode.label "Chế độ IE Tab +">
+<!ENTITY classic.label "Chế độ Chuẩn (Tương thích với IE Tab, ổn định hơn)">
+<!ENTITY advanced.label "Chế độ nâng cao">
+<!ENTITY firstrun.descr "Bạn nên chọn chế độ cho IE Tab + trước đã:">
+<!ENTITY restart.descr "Những thay đổi sẽ có hiệu lực khi khởi động lại &brandShortName;.">
+<!ENTITY rules.column "Các quy tắc">
+<!ENTITY enabled.column "Bật">
+<!ENTITY cookies.column "Đồng bộ Cookie">
+<!ENTITY useragent.column "Đồng bộ User-Agent">
+<!ENTITY switchback.column "Chuyển trở lại &brandShortName; trong trang mới">
+<!ENTITY settings.import-ietab "Nhập các thiết đặt từ IETab">
+<!ENTITY switch.show-prompt "Hiển thị nhắc nhở 'Thử lại' khi chuyển sang IE">
+<!ENTITY context.edit.label "Sửa quy tắc">
+<!ENTITY context.moveup.label "Di chuyển quy tắc lên trên">
+<!ENTITY context.movedown.label "Di chuyển quy tắc xuống dưới">
+<!ENTITY context.enable.label "Bật">
+<!ENTITY context.disable.label "Tắt">
+<!ENTITY edit.label "Sửa">
+<!ENTITY edit.accesskey "E">
+<!ENTITY cut.label "Cắt">
+<!ENTITY cut.accesskey "T">
+<!ENTITY copy.label "Sao chép">
+<!ENTITY copy.accesskey "C">
+<!ENTITY paste.label "Dán">
+<!ENTITY paste.accesskey "P">
+<!ENTITY remove.label "Xóa">
+<!ENTITY remove.accesskey "D">
+<!ENTITY context.switchEngine "Chuyển đổi bộ máy quét lớp">
+<!ENTITY context.switchEngineSafe "Chuyển đổi bộ máy (Không đồng bộ User Agent)">
+<!ENTITY context.switchEngineNoCookie "Chuyển đổi bộ máy (Không đồng bộ Cookie)">
+<!ENTITY context.settings "Thiết đặt...">
+<!ENTITY features.adblock "Hỗ trợ Adblock Plus (Ứng dụng khóa quảng cáo)">
+<!ENTITY features.synccookie "Đồng bộ các cookie">
