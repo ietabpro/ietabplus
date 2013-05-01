@@ -49,7 +49,7 @@
     <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
     <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\Projects\coralietab\Firefox\extensions\coralietab@mozdev.org\plugins</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">np$(ProjectName)</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">np$(ProjectName)</TargetName>
   </PropertyGroup>
@@ -76,7 +76,7 @@
     </PreLinkEvent>
     <Link>
       <AdditionalDependencies>xpcomglue_s.lib;xpcom.lib;nspr4.lib;embed_base_s.lib;plc4.lib;plds4.lib;wininet.lib;pcrecppd.lib;pcred.lib;pcreposixd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>../gecko-sdk/lib;../3rdParty/PCRE/pcre-8.02/build/debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../gecko-sdk/lib;../3rdParty/PCRE/pcre-8.32/build/debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ModuleDefinitionFile>CoralIETab.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
@@ -99,7 +99,7 @@
     <Link>
       <AdditionalDependencies>xpcomglue_s.lib;xpcom.lib;nspr4.lib;embed_base_s.lib;plc4.lib;plds4.lib;wininet.lib;pcrecpp.lib;pcre.lib;pcreposix.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)np$(ProjectName).dll</OutputFile>
-      <AdditionalLibraryDirectories>../gecko-sdk/lib;../3rdParty/PCRE/pcre-8.02/build/release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../gecko-sdk/lib;../3rdParty/PCRE/pcre-8.32/build/release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ModuleDefinitionFile>CoralIETab.def</ModuleDefinitionFile>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
