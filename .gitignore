@@ -11,3 +11,14 @@
 *.lai
 *.la
 *.a
+*.opensdf
+*.sdf
+*.suo
+*.user
+*.ipch
+
+src/plugins/Debug/*
+src/plugins/Release/*
+src/plugins/CoralIETab/Debug/*
+src/plugins/CoralIETab/Release/*
+

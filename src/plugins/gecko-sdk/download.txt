@@ -1,0 +1,5 @@
+GECKO  1.9.2 (Firefox 3.6) - GECKO SDK - FROM THE XULRUNNER PACKAGE HERE:
+
+https://developer.mozilla.org/en-US/docs/Gecko_SDK
+
+(specifically: http://ftp.mozilla.org/pub/mozilla.org/xulrunner/releases/3.6.28/sdk/xulrunner-3.6.28.en-US.win32.sdk.zip)

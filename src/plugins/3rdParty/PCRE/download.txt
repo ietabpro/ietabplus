@@ -1,10 +1,16 @@
+PCRE IS A 3RD PARTY LIBRARY FOR REGULAR EXPRESSIONS.
+CURRENT BINARIES ARE BUILT FROM VERSION 8.32 WITH VISUAL STUDIO 2010
+=============================
 http://www.pcre.org/
 
-The latest release of the PCRE library is 8.02. You can download it from its official home via anonymous FTP:
 
-    * ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/
+BUILD INSTRUCTIONS
+======================
 
-You can also download via HTTP from the mirror at SourceForge.net:
+1) Unzip PCRE into the version-specific directory.
+2) Install CMAKE
+3) Start to follow the CMAKE instructions in NON-UNIX-USE
+4) After loading the config in CMAKE, check on "Advanced", and search for all uses of /MD (which signifies linking with the DLL version of the runtime)
+5) Change all /MD occurrences to /MT (to use the statically linked runtime)
 
-    * http://sourceforge.net/projects/pcre/files/
 
