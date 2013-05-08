@@ -52,6 +52,8 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">np$(ProjectName)</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">np$(ProjectName)</TargetName>
+    <CustomBuildAfterTargets Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Build</CustomBuildAfterTargets>
+    <CustomBuildAfterTargets Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Build</CustomBuildAfterTargets>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
@@ -60,7 +62,7 @@
     </PreBuildEvent>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>../gecko-sdk/include;../gecko-sdk/internal;../3rdParty/pcre/pcre-8.02;../3rdParty/pcre/pcre-8.02/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../gecko-sdk/include;../gecko-sdk/internal;../3rdParty/pcre/pcre-8.32;../3rdParty/pcre/pcre-8.32/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;XP_WIN;_ENABLE_LOG_;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -82,12 +84,24 @@
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
+    <CustomBuildStep>
+      <Command>copy $(OutDir)npcoralietab.dll ..\..\extensions\trunk\plugins\</Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Message>Copying to plugin dir</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>../plugins/$(ProjectName).dll</Outputs>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Inputs>$(OutDir)np$(ProjectName).dll;%(Inputs)</Inputs>
+    </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <Optimization>Full</Optimization>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>../gecko-sdk/include;../gecko-sdk/internal;../3rdParty/pcre/pcre-8.02;../3rdParty/pcre/pcre-8.02/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../gecko-sdk/include;../gecko-sdk/internal;../3rdParty/pcre/pcre-8.32;../3rdParty/pcre/pcre-8.32/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;XP_WIN;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <BufferSecurityCheck>false</BufferSecurityCheck>
@@ -106,6 +120,18 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
+    <CustomBuildStep>
+      <Command>copy $(OutDir)npcoralietab.dll ..\..\extensions\trunk\plugins\</Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Message>Copying to plugin dir</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>../plugins/$(ProjectName).dll</Outputs>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Inputs>$(OutDir)np$(ProjectName).dll;%(Inputs)</Inputs>
+    </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CoralIETab.cpp" />
