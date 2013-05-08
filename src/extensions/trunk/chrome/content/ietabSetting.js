@@ -22,12 +22,12 @@
  * Contributor(s):
  *
  * ***** END LICENSE BLOCK ***** */
- 
+
 function IeTab() {}
 
 IeTab.prototype = {
 	IExploreExePath: "",
-   
+
 	IETAB_SYNC_COOKIES: 1,
 	IETAB_SYNC_USER_AGENT: 2,
 	IETAB_AUTO_SWITCH_BACK: 4,
@@ -54,7 +54,7 @@ IeTab.prototype.addFilterRule = function(rule) {
 	var flags = parseInt(rule.substr(0,pos));
 	var ruleStr = rule.substr(pos+1);
 	var rulesListChilds = document.getElementById('rulesListChilds');
-	
+
 	// Checking whether the rule already exists
 	var bFound = false;
 	for ( var i = 0; i < rulesListChilds.childNodes.length; i++ ) {
@@ -65,7 +65,7 @@ IeTab.prototype.addFilterRule = function(rule) {
 			break;
 		}
 	}
-	
+
 	if (!bFound) {
 		var item = document.createElement('treeitem');
 		var row = document.createElement('treerow');
@@ -87,7 +87,7 @@ IeTab.prototype.addFilterRule = function(rule) {
 		item.appendChild(row);
 		rulesListChilds.appendChild(item);
 	}
-	
+
 	return (rulesListChilds.childNodes.length-1);
 }
 
@@ -97,7 +97,7 @@ IeTab.prototype.initDialog = function() {
 
 	////////////////////////////////////////////////////////////////
 	// rules
-	// Firstly we'll clear the existing contents 
+	// Firstly we'll clear the existing contents
 	var rules = document.getElementById('rulesListChilds');
 	while (rules.hasChildNodes()) rules.removeChild(rules.firstChild);
 	// Then we'll fill the contents with rules from preference
@@ -110,7 +110,7 @@ IeTab.prototype.initDialog = function() {
 		}
 	}
 	////////////////////////////////////////////////////////////////
-   
+
    //general
    document.getElementById('toolsmenu').checked = this.getBoolPref("coral.ietab.toolsmenu", true);
    document.getElementById('toolsmenu.icon').checked = this.getBoolPref("coral.ietab.toolsmenu.icon", false);
@@ -118,7 +118,7 @@ IeTab.prototype.initDialog = function() {
    document.getElementById('handleurl').checked = this.getBoolPref("coral.ietab.handleUrlBar", false);
    document.getElementById('alwaysnew').checked = this.getBoolPref("coral.ietab.alwaysNewTab", false);
    document.getElementById('focustab').checked  = this.getBoolPref("coral.ietab.focustab", true);
-   
+
 	var mode = this.getStrPref("coral.ietab.mode", "");
 	var firstRun = mode.length==0;
 	gIeTab.setAttributeHidden(document.getElementById('switchgrp'), firstRun);
@@ -157,12 +157,12 @@ IeTab.prototype.initDialog = function() {
    var newurl = (window.arguments ? window.arguments[0] : ""); //get CurrentTab's URL
    document.getElementById('urlbox').value = ( this.startsWith(newurl,"about:") ? "" : newurl);
    document.getElementById('urlbox').select();
-   
+
    //updateStatus
    this.updateDialogPositions();
    this.updateDialogAllStatus();
    this.updateApplyButton(false);
-   
+
    	if (window.arguments && window.arguments.length > 2 && window.arguments[2]) {
 		document.getElementById("dlgTab").selectedIndex = window.arguments[2];
 	}
@@ -179,7 +179,7 @@ IeTab.prototype.updateCheckBox = function(e) {
 		var elm = document.getElementById('showprompt');
 		elm.disabled = ! cookieSync;
 		elm.checked  = cookieSync && gIeTab.getBoolPref("coral.ietab.showprompt", true);
-		
+
 		if (gIeTab.getStrPref("coral.ietab.mode", "").length > 0) {
 			gIeTab.setAttributeHidden(document.getElementById('restartPrompt'), false);
 		}
@@ -189,21 +189,21 @@ IeTab.prototype.updateCheckBox = function(e) {
 
 IeTab.prototype.updateRadio = function(e) {
 	var isClassicMode = document.getElementById('classicMode').selected;
-	
+
 	var c1 = document.getElementById('adblock');
 	c1.disabled = isClassicMode;
 	c1.checked = (!isClassicMode) && gIeTab.getBoolPref("coral.ietab.adblock", false);
-	
+
 	var cookieSync = (!isClassicMode) && gIeTab.getBoolPref("coral.ietab.cookieSync", false);
-	
+
 	var c2 = document.getElementById('cookieSync');
 	c2.disabled = isClassicMode;
 	c2.checked = cookieSync;
-	
+
 	var c3 = document.getElementById('showprompt');
 	c3.disabled = isClassicMode || !cookieSync;
 	c3.checked  = cookieSync && gIeTab.getBoolPref("coral.ietab.showprompt", true);
-	
+
 	if (gIeTab.getStrPref("coral.ietab.mode", "").length > 0)
 	{
 		gIeTab.setAttributeHidden(document.getElementById('restartPrompt'), false);
@@ -253,13 +253,13 @@ IeTab.prototype.setOptions = function() {
    this.setBoolPref("coral.ietab.handleUrlBar", document.getElementById('handleurl').checked);
    this.setBoolPref("coral.ietab.alwaysNewTab", document.getElementById('alwaysnew').checked);
    this.setBoolPref("coral.ietab.focustab", document.getElementById('focustab').checked);
-	
+
 	if (document.getElementById('classicMode').selected)
 		this.setStrPref("coral.ietab.mode","classic");
 	else {
 		this.setStrPref("coral.ietab.mode","advanced");
 		this.setBoolPref("coral.ietab.adblock", document.getElementById('adblock').checked);
-		
+
 		var cookieSync = document.getElementById('cookieSync').checked;
 		this.setBoolPref("coral.ietab.cookieSync", cookieSync);
 		if ( cookieSync ) this.setBoolPref("coral.ietab.showprompt", document.getElementById('showprompt').checked);
@@ -313,12 +313,12 @@ IeTab.prototype.getRuleListString = function() {
 		if(rule!="")
 		{
 			var flags = 0;
-			
+
 			if(rules.view.getCellValue(i, rules.columns['col-enabled'])=="false") flags |= 0x8000;			// The highest bit == 1 means disabled
 			if(rules.view.getCellValue(i, rules.columns['col-sync-cookies'])=="true") flags |= this.IETAB_SYNC_COOKIES;
 			if(rules.view.getCellValue(i, rules.columns['col-sync-useragent'])=="true") flags |= this.IETAB_SYNC_USER_AGENT;
 			if(rules.view.getCellValue(i, rules.columns['col-switchback'])=="true") flags |= this.IETAB_AUTO_SWITCH_BACK;
-			
+
 			list.push(flags+","+rule);
 		}
 	}
@@ -377,7 +377,7 @@ IeTab.prototype.addNewURL = function() {
       var idx = this.findRule(rule);
       if (idx == -1) {
       	idx = this.addFilterRule("0,"+rule);
-      	
+
       	urlbox.value = "";
       }
       ruleList.view.selection.select(idx);
@@ -640,9 +640,10 @@ function cmd_pasteFromClipboard() {
 		return;
 	}
 
-	for each (var ruleStr in data.split(','))
+	for (var key in data.split(','))
 	{
-		gIeTab.addFilterRule('0,'+ruleStr);
+		var ruleStr = data[key];
+        gIeTab.addFilterRule('0,'+ruleStr);
 	}
 }
 
