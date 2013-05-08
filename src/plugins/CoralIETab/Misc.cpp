@@ -3,7 +3,7 @@
 #define PCRE_STATIC 1
 
 #ifdef HAVE_CONFIG_H
-#include "config.h"
+// #include "config.h"
 #endif
 #include "../3rdParty/pcre/pcre-8.32/pcreposix.h"
 #include "../3rdParty/pcre/pcre-8.32/pcrecpp.h"
