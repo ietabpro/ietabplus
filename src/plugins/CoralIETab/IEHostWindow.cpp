@@ -161,7 +161,9 @@ VOID UnloadAPP()
 
 CIEHostWindow * CIEHostWindow::Create( HWND hParent, _U_RECT rc )
 {
-	CIEHostWindow * pIEHostWindow = new CIEHostWindow();
+ //   ::MessageBoxA(NULL, "Attach", NULL, MB_OK);
+
+    CIEHostWindow * pIEHostWindow = new CIEHostWindow();
 	if ( pIEHostWindow )
 	{
 		if (FAILED(pIEHostWindow->CreateWebBrowser(hParent, rc)))
