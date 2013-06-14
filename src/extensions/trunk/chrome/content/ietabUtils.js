@@ -214,7 +214,7 @@ IeTab.prototype.setStrPref = function(prefName, value) {
 //-----------------------------------------------------------------------------
 
 IeTab.prototype.getDefaultCharset = function(defval) {
-   var charset = this.getStrPref("coral.ietab.intl.charset.default", "");
+   var charset = this.getStrPref("extensions.coral.ietab.intl.charset.default", "");
    if (charset.length) return charset;
 	var gPrefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
 	if(gPrefs.prefHasUserValue("intl.charset.default")) {

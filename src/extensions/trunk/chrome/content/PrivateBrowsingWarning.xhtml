@@ -237,7 +237,7 @@
 		var prefservice = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
 		try {
 			var prefs = prefservice.getBranch("");
-   			prefs.setBoolPref("coral.ietab.privatebrowsingwarning", document.getElementById("chkWarning").checked);
+   			prefs.setBoolPref("extensions.coral.ietab.privatebrowsingwarning", document.getElementById("chkWarning").checked);
 			cookieService.setCookieString(ioService.newURI("http://coralietab/", null, null), null, "privatebrowsingwarning=no", null);
 			parent.location.reload();
 		}

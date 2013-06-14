@@ -34,7 +34,7 @@ IeTab.prototype = {
 }
 
 IeTab.prototype.getPrefRuleList = function() {
-	var s = this.getStrPref("coral.ietab.rulelist", null);
+	var s = this.getStrPref("extensions.coral.ietab.rulelist", null);
 	if(s) {
 		return JSON.parse(s);
 	}
@@ -112,46 +112,46 @@ IeTab.prototype.initDialog = function() {
 	////////////////////////////////////////////////////////////////
 
    //general
-   document.getElementById('toolsmenu').checked = this.getBoolPref("coral.ietab.toolsmenu", true);
-   document.getElementById('toolsmenu.icon').checked = this.getBoolPref("coral.ietab.toolsmenu.icon", false);
-   document.getElementById('statusbar').checked = this.getBoolPref("coral.ietab.statusbar", true);
-   document.getElementById('handleurl').checked = this.getBoolPref("coral.ietab.handleUrlBar", false);
-   document.getElementById('alwaysnew').checked = this.getBoolPref("coral.ietab.alwaysNewTab", false);
-   document.getElementById('focustab').checked  = this.getBoolPref("coral.ietab.focustab", true);
+   document.getElementById('toolsmenu').checked = this.getBoolPref("extensions.coral.ietab.toolsmenu", true);
+   document.getElementById('toolsmenu.icon').checked = this.getBoolPref("extensions.coral.ietab.toolsmenu.icon", false);
+   document.getElementById('statusbar').checked = this.getBoolPref("extensions.coral.ietab.statusbar", true);
+   document.getElementById('handleurl').checked = this.getBoolPref("extensions.coral.ietab.handleUrlBar", false);
+   document.getElementById('alwaysnew').checked = this.getBoolPref("extensions.coral.ietab.alwaysNewTab", false);
+   document.getElementById('focustab').checked  = this.getBoolPref("extensions.coral.ietab.focustab", true);
 
-	var mode = this.getStrPref("coral.ietab.mode", "");
+	var mode = this.getStrPref("extensions.coral.ietab.mode", "");
 	var firstRun = mode.length==0;
 	gIeTab.setAttributeHidden(document.getElementById('switchgrp'), firstRun);
 	gIeTab.setAttributeHidden(document.getElementById('firstrunDescr'), !firstRun);
 
 	var isClassicMode = mode!="advanced";
-	var cookieSync = (!isClassicMode) && this.getBoolPref("coral.ietab.cookieSync", false);
-	document.getElementById('adblock').checked = (!isClassicMode) && this.getBoolPref("coral.ietab.adblock", false);
+	var cookieSync = (!isClassicMode) && this.getBoolPref("extensions.coral.ietab.cookieSync", false);
+	document.getElementById('adblock').checked = (!isClassicMode) && this.getBoolPref("extensions.coral.ietab.adblock", false);
 	document.getElementById('cookieSync').checked = cookieSync;
-	document.getElementById('showprompt').checked  = cookieSync && this.getBoolPref("coral.ietab.showprompt", true);
+	document.getElementById('showprompt').checked  = cookieSync && this.getBoolPref("extensions.coral.ietab.showprompt", true);
 	document.getElementById('modegrp').selectedIndex = isClassicMode ? 0:1;
 	document.getElementById('adblock').disabled = isClassicMode;
 	document.getElementById('cookieSync').disabled = isClassicMode;
 	document.getElementById('showprompt').disabled = isClassicMode || !cookieSync;
 
    //context
-   document.getElementById('pagelink.embed').checked = this.getBoolPref("coral.ietab.pagelink", true);
-   document.getElementById('tabsmenu.embed').checked = this.getBoolPref("coral.ietab.tabsmenu", true);
-   document.getElementById('bookmark.embed').checked = this.getBoolPref("coral.ietab.bookmark", true);
+   document.getElementById('pagelink.embed').checked = this.getBoolPref("extensions.coral.ietab.pagelink", true);
+   document.getElementById('tabsmenu.embed').checked = this.getBoolPref("extensions.coral.ietab.tabsmenu", true);
+   document.getElementById('bookmark.embed').checked = this.getBoolPref("extensions.coral.ietab.bookmark", true);
 
-   document.getElementById('pagelink.extapp').checked = this.getBoolPref("coral.ietab.pagelink.extapp", true);
-   document.getElementById('tabsmenu.extapp').checked = this.getBoolPref("coral.ietab.tabsmenu.extapp", true);
-   document.getElementById('bookmark.extapp').checked = this.getBoolPref("coral.ietab.bookmark.extapp", true);
+   document.getElementById('pagelink.extapp').checked = this.getBoolPref("extensions.coral.ietab.pagelink.extapp", true);
+   document.getElementById('tabsmenu.extapp').checked = this.getBoolPref("extensions.coral.ietab.tabsmenu.extapp", true);
+   document.getElementById('bookmark.extapp').checked = this.getBoolPref("extensions.coral.ietab.bookmark.extapp", true);
 
-   document.getElementById('pagelink.icon').checked = this.getBoolPref("coral.ietab.icon.pagelink", false);
-   document.getElementById('tabsmenu.icon').checked = this.getBoolPref("coral.ietab.icon.tabsmenu", false);
-   document.getElementById('bookmark.icon').checked = this.getBoolPref("coral.ietab.icon.bookmark", false);
+   document.getElementById('pagelink.icon').checked = this.getBoolPref("extensions.coral.ietab.icon.pagelink", false);
+   document.getElementById('tabsmenu.icon').checked = this.getBoolPref("extensions.coral.ietab.icon.tabsmenu", false);
+   document.getElementById('bookmark.icon').checked = this.getBoolPref("extensions.coral.ietab.icon.bookmark", false);
 
    //external
-   var path = this.getStrPref("coral.ietab.extAppPath", "");
+   var path = this.getStrPref("extensions.coral.ietab.extAppPath", "");
    document.getElementById('pathbox').value = (path == "" ? this.IExploreExePath : path);
-   document.getElementById('parambox').value = this.getStrPref("coral.ietab.extAppParam", "%1");
-   document.getElementById('ctrlclick').checked = this.getBoolPref("coral.ietab.ctrlclick", true);
+   document.getElementById('parambox').value = this.getStrPref("extensions.coral.ietab.extAppParam", "%1");
+   document.getElementById('ctrlclick').checked = this.getBoolPref("extensions.coral.ietab.ctrlclick", true);
 
    //fill urlbox
    var newurl = (window.arguments ? window.arguments[0] : ""); //get CurrentTab's URL
@@ -178,9 +178,9 @@ IeTab.prototype.updateCheckBox = function(e) {
 		var cookieSync = e.target.checked;
 		var elm = document.getElementById('showprompt');
 		elm.disabled = ! cookieSync;
-		elm.checked  = cookieSync && gIeTab.getBoolPref("coral.ietab.showprompt", true);
+		elm.checked  = cookieSync && gIeTab.getBoolPref("extensions.coral.ietab.showprompt", true);
 
-		if (gIeTab.getStrPref("coral.ietab.mode", "").length > 0) {
+		if (gIeTab.getStrPref("extensions.coral.ietab.mode", "").length > 0) {
 			gIeTab.setAttributeHidden(document.getElementById('restartPrompt'), false);
 		}
 	}
@@ -192,9 +192,9 @@ IeTab.prototype.updateRadio = function(e) {
 
 	var c1 = document.getElementById('adblock');
 	c1.disabled = isClassicMode;
-	c1.checked = (!isClassicMode) && gIeTab.getBoolPref("coral.ietab.adblock", false);
+	c1.checked = (!isClassicMode) && gIeTab.getBoolPref("extensions.coral.ietab.adblock", false);
 
-	var cookieSync = (!isClassicMode) && gIeTab.getBoolPref("coral.ietab.cookieSync", false);
+	var cookieSync = (!isClassicMode) && gIeTab.getBoolPref("extensions.coral.ietab.cookieSync", false);
 
 	var c2 = document.getElementById('cookieSync');
 	c2.disabled = isClassicMode;
@@ -202,9 +202,9 @@ IeTab.prototype.updateRadio = function(e) {
 
 	var c3 = document.getElementById('showprompt');
 	c3.disabled = isClassicMode || !cookieSync;
-	c3.checked  = cookieSync && gIeTab.getBoolPref("coral.ietab.showprompt", true);
+	c3.checked  = cookieSync && gIeTab.getBoolPref("extensions.coral.ietab.showprompt", true);
 
-	if (gIeTab.getStrPref("coral.ietab.mode", "").length > 0)
+	if (gIeTab.getStrPref("extensions.coral.ietab.mode", "").length > 0)
 	{
 		gIeTab.setAttributeHidden(document.getElementById('restartPrompt'), false);
 	}
@@ -232,63 +232,63 @@ IeTab.prototype.destory = function() {
 }
 
 IeTab.prototype.updateInterface = function() {
-   var statusbar = this.getBoolPref("coral.ietab.statusbar", true);
+   var statusbar = this.getBoolPref("extensions.coral.ietab.statusbar", true);
    var icon = (window.arguments ? window.arguments[1] : null); //get status-bar icon handle
    if (icon) this.setAttributeHidden(icon, !statusbar);
 }
 
 IeTab.prototype.setOptions = function() {
    //filter
-   this.setBoolPref("coral.ietab.filter", true);
-   this.setStrPref("coral.ietab.rulelist", this.getRuleListString());
+   this.setBoolPref("extensions.coral.ietab.filter", true);
+   this.setStrPref("extensions.coral.ietab.rulelist", this.getRuleListString());
 
    //general
    var toolsmenu = document.getElementById('toolsmenu').checked;
-   this.setBoolPref("coral.ietab.toolsmenu", toolsmenu);
-   this.setBoolPref("coral.ietab.toolsmenu.icon", document.getElementById('toolsmenu.icon').checked);
+   this.setBoolPref("extensions.coral.ietab.toolsmenu", toolsmenu);
+   this.setBoolPref("extensions.coral.ietab.toolsmenu.icon", document.getElementById('toolsmenu.icon').checked);
 
    var statusbar = document.getElementById('statusbar').checked;
-   this.setBoolPref("coral.ietab.statusbar", statusbar);
+   this.setBoolPref("extensions.coral.ietab.statusbar", statusbar);
 
-   this.setBoolPref("coral.ietab.handleUrlBar", document.getElementById('handleurl').checked);
-   this.setBoolPref("coral.ietab.alwaysNewTab", document.getElementById('alwaysnew').checked);
-   this.setBoolPref("coral.ietab.focustab", document.getElementById('focustab').checked);
+   this.setBoolPref("extensions.coral.ietab.handleUrlBar", document.getElementById('handleurl').checked);
+   this.setBoolPref("extensions.coral.ietab.alwaysNewTab", document.getElementById('alwaysnew').checked);
+   this.setBoolPref("extensions.coral.ietab.focustab", document.getElementById('focustab').checked);
 
 	if (document.getElementById('classicMode').selected)
-		this.setStrPref("coral.ietab.mode","classic");
+		this.setStrPref("extensions.coral.ietab.mode","classic");
 	else {
-		this.setStrPref("coral.ietab.mode","advanced");
-		this.setBoolPref("coral.ietab.adblock", document.getElementById('adblock').checked);
+		this.setStrPref("extensions.coral.ietab.mode","advanced");
+		this.setBoolPref("extensions.coral.ietab.adblock", document.getElementById('adblock').checked);
 
 		var cookieSync = document.getElementById('cookieSync').checked;
-		this.setBoolPref("coral.ietab.cookieSync", cookieSync);
-		if ( cookieSync ) this.setBoolPref("coral.ietab.showprompt", document.getElementById('showprompt').checked);
+		this.setBoolPref("extensions.coral.ietab.cookieSync", cookieSync);
+		if ( cookieSync ) this.setBoolPref("extensions.coral.ietab.showprompt", document.getElementById('showprompt').checked);
 	}
 
 
    //context (ietab)
-   this.setBoolPref("coral.ietab.pagelink", document.getElementById('pagelink.embed').checked);
-   this.setBoolPref("coral.ietab.tabsmenu", document.getElementById('tabsmenu.embed').checked);
-   this.setBoolPref("coral.ietab.bookmark", document.getElementById('bookmark.embed').checked);
+   this.setBoolPref("extensions.coral.ietab.pagelink", document.getElementById('pagelink.embed').checked);
+   this.setBoolPref("extensions.coral.ietab.tabsmenu", document.getElementById('tabsmenu.embed').checked);
+   this.setBoolPref("extensions.coral.ietab.bookmark", document.getElementById('bookmark.embed').checked);
 
    //context (extapp)
-   this.setBoolPref("coral.ietab.pagelink.extapp", document.getElementById('pagelink.extapp').checked);
-   this.setBoolPref("coral.ietab.tabsmenu.extapp", document.getElementById('tabsmenu.extapp').checked);
-   this.setBoolPref("coral.ietab.bookmark.extapp", document.getElementById('bookmark.extapp').checked);
+   this.setBoolPref("extensions.coral.ietab.pagelink.extapp", document.getElementById('pagelink.extapp').checked);
+   this.setBoolPref("extensions.coral.ietab.tabsmenu.extapp", document.getElementById('tabsmenu.extapp').checked);
+   this.setBoolPref("extensions.coral.ietab.bookmark.extapp", document.getElementById('bookmark.extapp').checked);
 
    //showicon
-   this.setBoolPref("coral.ietab.icon.pagelink", document.getElementById('pagelink.icon').checked);
-   this.setBoolPref("coral.ietab.icon.tabsmenu", document.getElementById('tabsmenu.icon').checked);
-   this.setBoolPref("coral.ietab.icon.bookmark", document.getElementById('bookmark.icon').checked);
+   this.setBoolPref("extensions.coral.ietab.icon.pagelink", document.getElementById('pagelink.icon').checked);
+   this.setBoolPref("extensions.coral.ietab.icon.tabsmenu", document.getElementById('tabsmenu.icon').checked);
+   this.setBoolPref("extensions.coral.ietab.icon.bookmark", document.getElementById('bookmark.icon').checked);
 
    //external
    var path = document.getElementById('pathbox').value;
-   this.setStrPref("coral.ietab.extAppPath", (path == this.IExploreExePath ? "" : path));
+   this.setStrPref("extensions.coral.ietab.extAppPath", (path == this.IExploreExePath ? "" : path));
 
    var param = document.getElementById('parambox').value;
-   this.setStrPref("coral.ietab.extAppParam", this.trim(param).split(/\s+/).join(" "));
+   this.setStrPref("extensions.coral.ietab.extAppParam", this.trim(param).split(/\s+/).join(" "));
 
-   this.setBoolPref("coral.ietab.ctrlclick", document.getElementById('ctrlclick').checked);
+   this.setBoolPref("extensions.coral.ietab.ctrlclick", document.getElementById('ctrlclick').checked);
 
    //update UI
    this.updateApplyButton(false);
@@ -493,7 +493,7 @@ IeTab.prototype.loadFromFile = function() {
 IeTab.prototype.getAllSettings = function(isDefault) {
    var prefservice = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
    var prefs = (isDefault ? prefservice.getDefaultBranch("") : prefservice.getBranch("") );
-   var preflist = prefs.getChildList("coral.ietab.", {});
+   var preflist = prefs.getChildList("extensions.coral.ietab.", {});
 
    var aList = ["#IE Tab Plus Preferences"];
    for (var i = 0 ; i < preflist.length ; i++) {
@@ -530,7 +530,7 @@ IeTab.prototype.setAllSettings = function(aList) {
       if (index > 0){
          var name = aList[i].substring(0, index);
          var value = aList[i].substring(index+1, aList[i].length);
-         if (this.startsWith(name, "coral.ietab.")) aPrefs.push([name, value]);
+         if (this.startsWith(name, "extensions.coral.ietab.")) aPrefs.push([name, value]);
       }
    }
    for (var i = 0 ; i < aPrefs.length ; i++) {

@@ -47,7 +47,7 @@ function checkOSVersion() {
 function isInPrivateBrowsingMode() {
 	var pbs;
 	try { pbs = Components.classes["@mozilla.org/privatebrowsing;1"].getService(Components.interfaces.nsIPrivateBrowsingService); } catch (e) {}
-	var privatebrowsingwarning = pbs && pbs.privateBrowsingEnabled && gIeTab.getBoolPref("coral.ietab.privatebrowsingwarning", true);
+	var privatebrowsingwarning = pbs && pbs.privateBrowsingEnabled && gIeTab.getBoolPref("extensions.coral.ietab.privatebrowsingwarning", true);
 	if ( privatebrowsingwarning ) {
 		var cookieService = Components.classes["@mozilla.org/cookieService;1"].getService(Components.interfaces.nsICookieService);
 		var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);

@@ -1,41 +1,41 @@
-pref("coral.ietab.mode", "");
-pref("coral.ietab.version", "");
+pref("extensions.coral.ietab.mode", "");
+pref("extensions.coral.ietab.version", "");
 
-pref("coral.ietab.filter", true);
-pref("coral.ietab.rulelist", "[\"0,/^file:\\\\/\\\\/\\\\/.*\\\\.(mht|mhtml)$/\",\"32768,/^http:\\\\/\\\\/[A-Za-z0-9]+\\\\//\",\"0,http://*update.microsoft.com/*\",\"0,http://www.windowsupdate.com/*\"]");
+pref("extensions.coral.ietab.filter", true);
+pref("extensions.coral.ietab.rulelist", "[\"0,/^file:\\\\/\\\\/\\\\/.*\\\\.(mht|mhtml)$/\",\"32768,/^http:\\\\/\\\\/[A-Za-z0-9]+\\\\//\",\"0,http://*update.microsoft.com/*\",\"0,http://www.windowsupdate.com/*\"]");
 
-pref("coral.ietab.toolsmenu", true);
-pref("coral.ietab.toolsmenu.icon", false);
-pref("coral.ietab.statusbar", true);
+pref("extensions.coral.ietab.toolsmenu", true);
+pref("extensions.coral.ietab.toolsmenu.icon", false);
+pref("extensions.coral.ietab.statusbar", true);
 
-pref("coral.ietab.handleUrlBar", false);
-pref("coral.ietab.alwaysNewTab", false);
-pref("coral.ietab.focustab", true);
-pref("coral.ietab.handleBookmarkURL", true);
+pref("extensions.coral.ietab.handleUrlBar", false);
+pref("extensions.coral.ietab.alwaysNewTab", false);
+pref("extensions.coral.ietab.focustab", true);
+pref("extensions.coral.ietab.handleBookmarkURL", true);
 
-pref("coral.ietab.showprompt", true);
+pref("extensions.coral.ietab.showprompt", true);
 
-pref("coral.ietab.pagelink", true);
-pref("coral.ietab.bookmark", true);
-pref("coral.ietab.tabsmenu", true);
+pref("extensions.coral.ietab.pagelink", true);
+pref("extensions.coral.ietab.bookmark", true);
+pref("extensions.coral.ietab.tabsmenu", true);
 
-pref("coral.ietab.pagelink.extapp", true);
-pref("coral.ietab.bookmark.extapp", true);
-pref("coral.ietab.tabsmenu.extapp", true);
+pref("extensions.coral.ietab.pagelink.extapp", true);
+pref("extensions.coral.ietab.bookmark.extapp", true);
+pref("extensions.coral.ietab.tabsmenu.extapp", true);
 
-pref("coral.ietab.icon.pagelink", false);
-pref("coral.ietab.icon.tabsmenu", false);
-pref("coral.ietab.icon.bookmark", false);
+pref("extensions.coral.ietab.icon.pagelink", false);
+pref("extensions.coral.ietab.icon.tabsmenu", false);
+pref("extensions.coral.ietab.icon.bookmark", false);
 
-pref("coral.ietab.ctrlclick", true);
-pref("coral.ietab.extAppPath", "");
-pref("coral.ietab.extAppParam", "%1");
+pref("extensions.coral.ietab.ctrlclick", true);
+pref("extensions.coral.ietab.extAppPath", "");
+pref("extensions.coral.ietab.extAppParam", "%1");
 
-pref("coral.ietab.intl.charset.default", "");
+pref("extensions.coral.ietab.intl.charset.default", "");
 
-pref("coral.ietab.minimize_memory", 300);
-pref("coral.ietab.adblock", true);
-pref("coral.ietab.cookieSync", true);
+pref("extensions.coral.ietab.minimize_memory", 300);
+pref("extensions.coral.ietab.adblock", true);
+pref("extensions.coral.ietab.cookieSync", true);
 
-pref("coral.ietab.open_newwindow", 1);
-pref("coral.ietab.privatebrowsingwarning", true);
+pref("extensions.coral.ietab.open_newwindow", 1);
+pref("extensions.coral.ietab.privatebrowsingwarning", true);

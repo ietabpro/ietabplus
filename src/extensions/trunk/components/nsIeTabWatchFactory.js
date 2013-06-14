@@ -102,11 +102,11 @@ var IeTabWatcher = {
    },
 
    isFilterEnabled: function() {
-      return (this.getBoolPref("coral.ietab.filter", true));
+      return (this.getBoolPref("extensions.coral.ietab.filter", true));
    },
 
    getPrefRuleList: function() {
-	var s = this.getStrPref("coral.ietab.rulelist", null);
+	var s = this.getStrPref("extensions.coral.ietab.rulelist", null);
 	if(s) {
 		return JSON.parse(s);
 	}
@@ -116,7 +116,7 @@ var IeTabWatcher = {
    },
 
    setPrefFilterList: function(list) {
-      this.setStrPref("coral.ietab.filterlist", list.join(" "));
+      this.setStrPref("extensions.coral.ietab.filterlist", list.join(" "));
    },
 
    isMatchURL: function(url, pattern) {
