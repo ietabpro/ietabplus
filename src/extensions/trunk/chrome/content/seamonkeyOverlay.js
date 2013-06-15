@@ -296,7 +296,9 @@ IeTab.prototype.ietabContextMenuPopup = function(e) {
 			menu_dest.setAttribute("label", menu_source.getAttribute("label"));
 			menu_dest.setAttribute("class", (showicon ? menu_source.getAttribute("iconic") : ""));
 			menu_dest.setAttribute("accesskey", menu_source.getAttribute("accesskey"));
-			menu_dest.setAttribute("oncommand", "gIeTab.viewLink(event, 0x0003);");
+			menu_dest.addEventListener("command", function() {
+			    gIeTab.viewLink(event, 0x0003);
+			}, false);
 			popupmenu.appendChild(menu_dest);
 		}
 		
@@ -305,7 +307,9 @@ IeTab.prototype.ietabContextMenuPopup = function(e) {
 			menu_dest = document.createElement("menuitem");
 			menu_dest.setAttribute("label", menu_source.getAttribute("label"));
 			menu_dest.setAttribute("accesskey", menu_source.getAttribute("accesskey"));
-			menu_dest.setAttribute("oncommand", "gIeTab.viewLink(event, 0x4000);");
+			menu_dest.addEventListener("command", function() {
+			    gIeTab.viewLink(event, 0x4000);
+			}, false);
 			menu_dest.setAttribute("disabled", item_disabled );
 			popupmenu.appendChild(menu_dest);
 		}
@@ -315,7 +319,9 @@ IeTab.prototype.ietabContextMenuPopup = function(e) {
 			menu_dest = document.createElement("menuitem");
 			menu_dest.setAttribute("label", menu_source.getAttribute("label"));
 			menu_dest.setAttribute("accesskey", menu_source.getAttribute("accesskey"));
-			menu_dest.setAttribute("oncommand", "gIeTab.viewLink(event, 0x4001);");
+			menu_dest.addEventListener("command", function() {
+			    gIeTab.viewLink(event, 0x4001);
+			}, false);
 			menu_dest.setAttribute("disabled", item_disabled );
 			popupmenu.appendChild(menu_dest);
 		}
@@ -327,7 +333,9 @@ IeTab.prototype.ietabContextMenuPopup = function(e) {
 			// menu_dest.setAttribute("label", menu_source.getAttribute("label"));
 			menu_dest.setAttribute("class", (showicon ? menu_source.getAttribute("iconic") : ""));
 			menu_dest.setAttribute("accesskey", menu_source.getAttribute("accesskey"));
-			menu_dest.setAttribute("oncommand", "gIeTab.viewLinkInExtApp();");
+			menu_dest.addEventListener("command", function() {
+			    gIeTab.viewLinkInExtApp();
+			}, false);
 			popupmenu.appendChild(menu_dest);
 		}
 	}
@@ -614,11 +622,15 @@ IeTab.prototype.addBookmarkMenuitem = function(e) {
 	miInt.hidden  = !isBookmark || !gIeTab.getBoolPref("extensions.coral.ietab.bookmark", true);
 	miExt.hidden  = !isBookmark || !gIeTab.getBoolPref("extensions.coral.ietab.bookmark.extapp", true);
 	if  (!miInt.hidden) {
-		miInt.setAttribute("oncommand", "gIeTab.addIeTab(\'"+bmNode.uri+"\');");
+	    miInt.addEventListener("command", function() {
+	        gIeTab.addIeTab(bmNode.uri);
+	    }, false);
 		miInt.setAttribute("class", (isShowIcon?miInt.getAttribute("iconic"):""));
 	}
 	if  (!miExt.hidden) {
-		miExt.setAttribute("oncommand", "gIeTab.loadInExtApp(\'"+bmNode.uri+"\');");
+	    miExt.addEventListener("command", function() {
+	        gIeTab.loadInExtApp(bmNode.uri);
+	    }, false);
 		miExt.setAttribute("class", (isShowIcon?miExt.getAttribute("iconic"):""));
 	}
 	
