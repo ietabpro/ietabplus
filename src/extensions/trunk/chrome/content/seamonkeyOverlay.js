@@ -643,7 +643,10 @@ IeTab.prototype.closeIeTab = function() {
       if (mTabs[i].localName == "tab") {
          var ietab = gIeTab.getIeTabElmt(mTabs[i]);
          if (ietab && (ietab.canClose)) {
-         	window.setTimeout(gIeTab.closeTab, 500, i);
+             window.setTimeout(
+                 function() {
+                     gIeTab.closeTab()
+                 }, 500, i);
          	break;
         }
       }
@@ -791,7 +794,10 @@ IeTab.prototype.focusIeTab = function() {
 IeTab.prototype.onTabSelected = function(e) {
    if (e.originalTarget.localName == "tabs") {
       gIeTab.updateAll();
-      window.setTimeout(gIeTab.focusIeTab, 0);
+      window.setTimeout(
+          function() {
+              gIeTab.focusIeTab()
+          }, 0);
    }
 }
 
@@ -1012,7 +1018,10 @@ IeTab.prototype.checkWhatsNew = function() {
 				var oldver = gIeTab.getStrPref("extensions.coral.ietab.version", "");
 				if (ietab.version > oldver) {
 					gIeTab.setStrPref("extensions.coral.ietab.version", ietab.version);
-					window.setTimeout(gIeTab.browse, 1000, "http://coralietab.mozdev.org/whatsnew.php?cli=o&v="+ietab.version);
+					window.setTimeout(
+                        function() {
+                            gIeTab.browse() 
+                        }, 1000, "http://coralietab.mozdev.org/whatsnew.php?cli=o&v="+ietab.version);
 				}
 			}
 		}
@@ -1023,7 +1032,10 @@ IeTab.prototype.checkWhatsNew = function() {
 			var oldver = gIeTab.getStrPref("extensions.coral.ietab.version", "");
 			if (aAddon.version > oldver) {
 				gIeTab.setStrPref("extensions.coral.ietab.version", aAddon.version);
-				window.setTimeout(gIeTab.browse, 1000, "http://coralietab.mozdev.org/whatsnew.php?cli=o&v="+aAddon.version);
+				window.setTimeout(
+                    function() {
+                        gIeTab.browse()
+                    }, 1000, "http://coralietab.mozdev.org/whatsnew.php?cli=o&v="+aAddon.version);
 			}
 		});  
 	}
