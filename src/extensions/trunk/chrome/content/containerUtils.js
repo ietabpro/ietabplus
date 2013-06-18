@@ -8,13 +8,13 @@ function isWindows() {
  */
 function checkOSVersion() {
 	var b = false;
-	
+
 	var m = /Windows NT (\d+\.\d+)/.exec(navigator.oscpu);
 	if ( m ) {
 		var ver = m[1];
 		if ( ver >= "6.0" ) return true;		// 6.0+: Vista, Win7 or later, no problem
 		if ( ver < "5.1" ) return false;		// 5.1: XP, can not work if is earlier than that
-		
+
 		// 5.1: XP, should be SP2+
 		// 5.2: Windows Server 2003, should be SP1+
 		var regRoot = 3;	// HKEY_LOCAL_MACHINE
@@ -40,38 +40,54 @@ function checkOSVersion() {
     	}
     }
 	}
-	
+
 	return b;
 }
 
 function isInPrivateBrowsingMode() {
+    try {
+        // Firefox 20+ uses this mechanism
+        Components.utils.import("resource://gre/modules/PrivateBrowsingUtils.jsm");
+        if ( typeof(PrivateBrowsingUtils) != 'undefined' ) {
+            return PrivateBrowsingUtils.isWindowPrivate(window);
+        }
+    } catch(ex) {}
+
+    // This is the legacy mechanism
 	var pbs;
-	try { pbs = Components.classes["@mozilla.org/privatebrowsing;1"].getService(Components.interfaces.nsIPrivateBrowsingService); } catch (e) {}
-	var privatebrowsingwarning = pbs && pbs.privateBrowsingEnabled && gIeTab.getBoolPref("extensions.coral.ietab.privatebrowsingwarning", true);
-	if ( privatebrowsingwarning ) {
-		var cookieService = Components.classes["@mozilla.org/cookieService;1"].getService(Components.interfaces.nsICookieService);
-		var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
-		var cookieManager = Components.classes["@mozilla.org/cookiemanager;1"].getService(Components.interfaces.nsICookieManager);
-		try {
-			var pbwFlag = cookieService.getCookieString(ioService.newURI("http://coralietab/", null, null), null);
-			if (pbwFlag) {
-				privatebrowsingwarning = pbwFlag.indexOf("privatebrowsingwarning=no") < 0;
-				cookieManager.remove("coralietab", "privatebrowsingwarning", "/", false);
-			}
-		}
-		catch (e) { }
-	}
-	
-	return privatebrowsingwarning;
+    try { pbs = Components.classes["@mozilla.org/privatebrowsing;1"].getService(Components.interfaces.nsIPrivateBrowsingService); } catch (e) {}
+	return (pbs && pbs.privateBrowsingEnabled && gIeTab.getBoolPref("extensions.coral.ietab.privatebrowsingwarning", true) );
+}
+
+function shouldShowPrivateBrowsingWarning() {
+    // Obviously no issue if we aren't in private browsing
+    if (!isInPrivateBrowsingMode()) {
+        return false;
+    }
+
+    // If they explicitly selected "Resume" from the warning page, then we will have set the privatebrowsingwarning=no cookie, check for that
+    var cookieService = Components.classes["@mozilla.org/cookieService;1"].getService(Components.interfaces.nsICookieService);
+    var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+    var cookieManager = Components.classes["@mozilla.org/cookiemanager;1"].getService(Components.interfaces.nsICookieManager);
+    try {
+        var pbwFlag = cookieService.getCookieString(ioService.newURI("http://coralietab/", null, null), null);
+        if (pbwFlag) {
+            var shouldShow = pbwFlag.indexOf("privatebrowsingwarning=no") < 0;
+            cookieManager.remove("coralietab", "privatebrowsingwarning", "/", false);
+            return shouldShow;
+        }
+    }
+    catch (e) {}
+    return true;
 }
 
 function shouldShowRetryPrompt() {
-	if (gIeTab.getStrPref('coral.ietab.mode', "")=="advanced") {
+    if (gIeTab.getStrPref('extensions.coral.ietab.mode', "")=="advanced") {
 		var m = /\?url=(\d+),(\S+)$/.exec(document.location.href);
 		if (m) {
 			var flags = parseInt(m[1]);
 			var url = decodeURI(m[2]);
-			if ( (flags == 0x4003) && gIeTab.startsWith(url, "http") && gIeTab.getBoolPref('coral.ietab.showprompt', true)) {
+			if ( (flags == 0x4003) && gIeTab.startsWith(url, "http") && gIeTab.getBoolPref('extensions.coral.ietab.showprompt', true)) {
 				return true;
 			}
 		}
@@ -130,7 +146,7 @@ function overlayCommandListener(event) {
 			case "focus":
 				ietab.focus();
 				break;
-			case "displaySecurityInfo":    
+			case "displaySecurityInfo":
 				ietab.displaySecurityInfo();
 				break;
 			case "zoom":
@@ -160,11 +176,11 @@ function registerEventHandler() {
 	window.addEventListener("OverlayCommand", overlayCommandListener, false);
 	window.addEventListener("IETabNotify", IETabNotifyListener, false);
 	window.addEventListener("PluginNotFound", PluginNotFoundListener, false);
-	
-	$(document).focus(function() {
+
+    document.addEventListener('focus', function() {
 		var ietab = document.getElementById("IETab");
 		if (ietab) {
 			ietab.focus();
 		}
-	});
+	}, false);
 }

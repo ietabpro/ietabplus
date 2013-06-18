@@ -125,19 +125,19 @@
               replaceWithHost(node.childNodes[i]);
         };
         replaceWithHost(intro);
-        
+
         if (getCSSClass() == "expertBadCert") {
           toggle('technicalContent');
           toggle('expertContent');
         }
-        
+
         var tech = document.getElementById("technicalContentText");
         if (tech)
           tech.textContent = getDescription();
-        
+
         addDomainErrorLink();
       }
-      
+
       /* In the case of SSL error pages about domain mismatch, see if
          we can hyperlink the user to the correct site.  We don't want
          to do this generically since it allows MitM attacks to redirect
@@ -149,29 +149,29 @@
         var sd = document.getElementById("technicalContentText");
         if (sd) {
           var desc = getDescription();
-          
+
           // sanitize description text - see bug 441169
-          
+
           // First, find the index of the <a> tag we care about, being careful not to
           // use an over-greedy regex
           var re = /<a id="cert_domain_link" title="([^"]+)">/;
           var result = re.exec(desc);
           if(!result)
             return;
-          
+
           // Remove sd's existing children
           sd.textContent = "";
 
           // Everything up to the link should be text content
           sd.appendChild(document.createTextNode(desc.slice(0, result.index)));
-          
+
           // Now create the link itself
           var anchorEl = document.createElement("a");
           anchorEl.setAttribute("id", "cert_domain_link");
           anchorEl.setAttribute("title", result[1]);
           anchorEl.appendChild(document.createTextNode(result[1]));
           sd.appendChild(anchorEl);
-          
+
           // Finally, append text for anything after the closing </a>
           sd.appendChild(document.createTextNode(desc.slice(desc.indexOf("</a>") + "</a>".length)));
         }
@@ -179,7 +179,7 @@
         var link = document.getElementById('cert_domain_link');
         if (!link)
           return;
-        
+
         var okHost = link.getAttribute("title");
         var thisHost = document.location.hostname;
         var proto = document.location.protocol;
@@ -189,7 +189,7 @@
         // get anyone anywhere useful. bug 432491
         okHost = okHost.replace(/^\*\./, "www.");
 
-        /* case #1: 
+        /* case #1:
          * example.com uses an invalid security certificate.
          *
          * The certificate is only valid for www.example.com
@@ -212,13 +212,13 @@
          */
         if (endsWith(thisHost, "." + okHost))
           link.href = proto + okHost;
-          
+
         // If we set a link, meaning there's something helpful for
         // the user here, expand the section by default
         if (link.href && getCSSClass() != "expertBadCert")
           toggle("technicalContent");
       }
-      
+
       function endsWith(haystack, needle) {
         return haystack.slice(-needle.length) == needle;
       }
@@ -230,7 +230,7 @@
         else
           el.setAttribute("collapsed", true);
       }
-      
+
       function markContinue() {
 		var cookieService = Components.classes["@mozilla.org/cookieService;1"].getService(Components.interfaces.nsICookieService);
 		var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
@@ -238,7 +238,7 @@
 		try {
 			var prefs = prefservice.getBranch("");
    			prefs.setBoolPref("extensions.coral.ietab.privatebrowsingwarning", document.getElementById("chkWarning").checked);
-			cookieService.setCookieString(ioService.newURI("http://coralietab/", null, null), null, "privatebrowsingwarning=no", null);
+   			cookieService.setCookieString(ioService.newURI("http://coralietab/", null, null), null, "privatebrowsingwarning=no", null);
 			parent.location.reload();
 		}
 		catch (e) { }
@@ -250,19 +250,19 @@
 
     <!-- PAGE CONTAINER (for styling purposes only) -->
     <div id="errorPageContainer">
-    
+
       <!-- Error Title -->
       <div id="errorTitle">
         <h1 id="errorTitleText">&privatebrowsingwarning.title;</h1>
       </div>
-      
+
       <!-- LONG CONTENT (the section most likely to require scrolling) -->
       <div id="errorLongContent">
         <div id="introContent">
           <p id="introContentP1">&privatebrowsingwarning.intro1;</p>
           <p>&privatebrowsingwarning.intro2;</p>
         </div>
-        
+
         <div id="whatShouldIDoContent">
           <h2>&certerror.whatShouldIDo.heading;</h2>
           <div id="whatShouldIDoContentText">
@@ -270,7 +270,7 @@
             <xul:button xmlns:xul='http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul' label='&certerror.getMeOutOfHere.label;' onclick="javascript:history.go(-1);"/>
           </div>
         </div>
-        
+
         <!-- The following sections can be unhidden by default by setting the
              "browser.xul.error_pages.expert_bad_cert" pref to true -->
         <div id="expertContent" collapsed="true">
