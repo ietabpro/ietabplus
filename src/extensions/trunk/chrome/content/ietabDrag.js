@@ -155,10 +155,9 @@ const ietab_statObserver = {
   //
   scheduleCleanup: function(evt) {
     clearTimeout(window.ietabDragCleanup);
-    window.ietabDragCleanup = setTimeout(
-        function() {
-            ietab_statObserver.cleanUp()
-        } ,700);
+    window.ietabDragCleanup = setTimeout(function() {
+        ietab_statObserver.cleanUp()
+    } ,700);
   },
 
   // restore the statusbar to its normal state
