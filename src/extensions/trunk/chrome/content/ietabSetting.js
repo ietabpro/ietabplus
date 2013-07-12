@@ -204,7 +204,7 @@ IeTab.prototype.updateRadio = function(e) {
 	c3.disabled = isClassicMode || !cookieSync;
 	c3.checked  = cookieSync && gIeTab.getBoolPref("extensions.coral.ietab.showprompt", true);
 
-	if (gIeTab.getStrPref("extensions.coral.ietab.mode", "").length > 0)
+	if (gIeTab.getStrPref("extensions.coral.ietab.mode", "").length > 0)lis
 	{
 		gIeTab.setAttributeHidden(document.getElementById('restartPrompt'), false);
 	}
@@ -215,18 +215,18 @@ IeTab.prototype.init = function() {
    this.initDialog();
    this.addEventListenerByTagName("checkbox", "CheckboxStateChange", this.updateCheckBox);
    this.addEventListenerByTagName("radio", "RadioStateChange", this.updateRadio);
-   this.addEventListener("rulesListChilds", "DOMAttrModified", this.updateApplyButton);
-   this.addEventListener("rulesListChilds", "DOMNodeInserted", this.updateApplyButton);
-   this.addEventListener("rulesListChilds", "DOMNodeRemoved", this.updateApplyButton);
    this.addEventListener("parambox", "input", this.updateApplyButton);
    this.addEventListener("toolsmenu", "command", this.updateToolsMenuStatus);
+
+   var self = this;
+   var filterList = document.getElementById("rulesList");
+   filterList.addEventListener("click", function(e) {
+       self.onSingleClickFilterList(e);
+   }, false);
 }
 
 IeTab.prototype.destory = function() {
    this.removeEventListenerByTagName("checkbox", "command", this.updateApplyButton);
-   this.removeEventListener("rulesListChilds", "DOMAttrModified", this.updateApplyButton);
-   this.removeEventListener("rulesListChilds", "DOMNodeInserted", this.updateApplyButton);
-   this.removeEventListener("rulesListChilds", "DOMNodeRemoved", this.updateApplyButton);
    this.removeEventListener("parambox", "input", this.updateApplyButton);
    this.removeEventListener("toolsmenu", "command", this.updateToolsMenuStatus);
 }
@@ -384,20 +384,41 @@ IeTab.prototype.addNewURL = function() {
       ruleList.boxObject.ensureRowIsVisible(idx);
    }
    ruleList.focus();
+   this.updateApplyButton(true);
    this.updateAddButtonStatus();
 }
 
 IeTab.prototype.delSelected = function() {
-	var ruleList = document.getElementById('rulesList');
+    var ruleList = document.getElementById('rulesList');
+    var found = false;
 	if (ruleList) {
 		var rules = document.getElementById('rulesListChilds');
 		if (ruleList.view.selection.count > 0) {
 			for (var i=rules.childNodes.length-1 ; i>=0 ; i--) {
-				if (ruleList.view.selection.isSelected(i))
-					rules.removeChild(rules.childNodes[i]);
+			    if (ruleList.view.selection.isSelected(i)) {
+			        rules.removeChild(rules.childNodes[i]);
+			        found = true;
+			    }
 			}
 		}
 	}
+
+	if(found)
+	    this.updateApplyButton(true);
+}
+
+IeTab.prototype.onSingleClickFilterList = function(e) {
+    var filter = document.getElementById("rulesList");
+    var tbo = filter.treeBoxObject;
+
+    // get the row, col and child element at the point
+    var row = { }, col = { }, child = { };
+    tbo.getCellAt(e.clientX, e.clientY, row, col, child);
+
+    // If they clicked on the enable/disable column, then update the apply button
+    if (col.value && (typeof col.value == "object") && (col.value.id != "col-rules")) {
+        this.updateApplyButton(true);
+    }
 }
 
 IeTab.prototype.onClickFilterList = function(e) {
@@ -408,6 +429,7 @@ IeTab.prototype.onClickFilterList = function(e) {
          urlbox.value = ruleList.view.getCellText(ruleList.currentIndex, ruleList.columns['col-rules']);
          urlbox.select();
          this.updateAddButtonStatus();
+         this.updateApplyButton(true);
       }
    }
 }

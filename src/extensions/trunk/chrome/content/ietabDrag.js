@@ -7,6 +7,7 @@ const ietab_statObserver = {
 	flavourName: "ie_tab/statusbarpanel",
 	statusbarPanelId: "ietab-status-deck",
 	statusbarId: "status-bar",
+    dragCleanup: null,
 	
   init: function () {
     var statusbarPanel = document.getElementById(ietab_statObserver.statusbarPanelId);
@@ -154,8 +155,8 @@ const ietab_statObserver = {
   // calling cleanUp directly fires immediately so use this to get around that
   //
   scheduleCleanup: function(evt) {
-    clearTimeout(window.ietabDragCleanup);
-    window.ietabDragCleanup = setTimeout(function() {
+    clearTimeout(this.dragCleanup);
+    this.dragCleanup = setTimeout(function() {
         ietab_statObserver.cleanUp()
     } ,700);
   },
@@ -163,7 +164,7 @@ const ietab_statObserver = {
   // restore the statusbar to its normal state
   //
   cleanUp: function() {
-    clearTimeout(window.ietabDragCleanup);
+    clearTimeout(this.dragCleanup);
 
     var statusbar = document.getElementById(ietab_statObserver.statusbarId);
     var statusbarPanel = document.getElementById(ietab_statObserver.statusbarPanelId);
